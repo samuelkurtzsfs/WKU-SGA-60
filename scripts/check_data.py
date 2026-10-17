@@ -330,6 +330,30 @@ RECORD = re.compile(r"/dlsc_ua_records/(\d+)")
 # "69:52", "73 [74]:14", "75:19 [20]" - the bracket is the archive's correction
 # of a number the paper misprinted, and either reading is a fair citation.
 CITE = re.compile(r"(\d+)(?:\s*\[(\d+)\])?\s*:\s*(\d+)(?:\s*\[(\d+)\])?")
+# the date a label gives for the issue it has just cited, as "67:25, 21 Nov 1991".
+# Anchored to the volume:number so it cannot pick up a date from the prose of a
+# long photograph caption, which names dates for quite other reasons.
+CITE_DATE = re.compile(
+    r"\d+(?:\s*\[\d+\])?\s*:\s*\d+(?:\s*\[\d+\])?\s*,\s*"
+    r"(\d{1,2})\s+([A-Za-z]{3,9})\.?\s+(\d{4})")
+MONTHS = {m: i for i, m in enumerate(
+    ["jan", "feb", "mar", "apr", "may", "jun",
+     "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
+
+# Records where TopSCHOLAR's own Publication Date field is wrong and this
+# archive's label is right. Keep the reasoning with the exception: without it a
+# later pass reads a validator failure and "corrects" a correct date.
+#
+# 7776 - Herald Vol. 67, No. 25. The catalogue says 10-21-1991. It cannot be.
+#   No. 24 is 19 Nov 1991 and No. 26 is 26 Nov 1991, so 21 October would place
+#   this issue two weeks before No. 20 (5 Nov) and run the numbering backwards.
+#   Every issue of Vol. 67 from No. 20 to No. 29 falls on a Tuesday or a
+#   Thursday; 21 Oct 1991 is a Monday and 21 Nov 1991 is a Thursday, sitting
+#   exactly between No. 24 and No. 26. The archivist typed 10 for 11.
+# Mapped to the date this archive should carry, not merely skipped: an
+# exception that only suppresses a failure is a blind spot, and would let a
+# later pass quietly file the catalogue's wrong date instead.
+CATALOGUE_DATE_WRONG = {"7776": "1991-11-21"}
 
 
 def _issue_pairs(issue):
@@ -368,9 +392,10 @@ def check_citations(ys):
         m = RECORD.search(e.get("url", ""))
         if m:
             catalogued[m.group(1)] = (_issue_pairs(e.get("issue", "")),
-                                      e.get("issue", ""))
+                                      e.get("issue", ""), e.get("date", ""))
 
     seen = 0
+    dated = 0
     for path_name in ("years.json", "photos.json", "legislation.json"):
         f = ROOT / "data" / path_name
         if not f.exists():
@@ -382,7 +407,8 @@ def check_citations(ys):
                 url, label = n.get("url"), n.get("label") or n.get("title")
                 m = RECORD.search(url or "")
                 if m and label:
-                    pairs, issue = catalogued.get(m.group(1), (None, ""))
+                    rec = m.group(1)
+                    pairs, issue, pub = catalogued.get(rec, (None, "", ""))
                     lm = CITE.search(label)
                     if pairs and lm:
                         seen += 1
@@ -391,10 +417,30 @@ def check_citations(ys):
                         if not ({(v, x) for v in vols for x in nos} & pairs):
                             bad(f"{path_name}: a citation reads "
                                 f"\"{label[:60]}\" but its link opens {issue}")
+                    dm = CITE_DATE.search(label or "")
+                    if pub and dm:
+                        mon = MONTHS.get(dm.group(2)[:3].lower())
+                        if mon:
+                            dated += 1
+                            said = (f"{dm.group(3)}-{mon:02d}-"
+                                    f"{int(dm.group(1)):02d}")
+                            want = CATALOGUE_DATE_WRONG.get(rec)
+                            if want and said != want:
+                                bad(f"{path_name}: a citation dates "
+                                    f"\"{label[:60]}\" to {said}. The "
+                                    f"catalogue says {pub} and is wrong; this "
+                                    f"issue is {want}")
+                            elif not want and said != pub:
+                                bad(f"{path_name}: a citation dates "
+                                    f"\"{label[:60]}\" to {said} but the issue "
+                                    f"it opens is published {pub}")
                 stack.extend(n.values())
             elif isinstance(n, list):
                 stack.extend(n)
     note(f"{seen} citations name a volume and number; each opens that issue")
+    note(f"{dated} of them also name a date; each matches the issue's own, "
+         f"bar {len(CATALOGUE_DATE_WRONG)} where the catalogue is the one "
+         f"that is wrong")
 
 
 QUOTED = re.compile(r"[\u201c\"]([^\u201c\u201d\"]{2,600})[\u201d\"]")

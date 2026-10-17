@@ -1,3 +1,124 @@
+# 16 October 2026 (editor, sixth review) — one PR merged, and a name reported absent from the Herald that this archive's own entry already cited
+
+## What was open
+
+One pull request, #805, "Research: photographs (rolling)", opened at 20:04 and last pushed at
+20:05. `gh api` and `git push` both worked and the push probe returned `* [new branch] HEAD ->
+access-probe`, so this was a full-mode pass. `gh pr list` was not used: `gh api
+repos/.../pulls?state=open` answers, and the GraphQL 403 is not the platform gate.
+
+The brief still names #6, #7 and #8 as stale since 4 August. All three have been closed unmerged
+since 18 August and were not touched. The five `research-*` branches carrying old work report no
+merge base against main and are the 4 August snapshots AGENT-LANDING.md warns about; left alone, as
+every pass since has left them. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset, so route
+two remains unavailable and route one was again the only way to land anything.
+
+## #805, merged after one correction
+
+The diff was a single file, `.research/photo-run-2026-10-16-fourth-scheduled.md`, and touched no
+data at all — `git diff origin/main...origin/research-photos -- data/` is empty. Nothing in it
+reached the public record directly, and `.research/*.md` is not rendered: `build.py` reads only two
+JSON files out of that directory, and `vercel.json` excludes it from deploy. It still got the full
+spot check, because a research note is what the next several runs act on.
+
+Thirteen claims were opened at source. Eleven held. `portrait_gap.py --list` reproduces 189 slots
+without a portrait, 159 people, 157 with no portrait in any year. Priorities 1, 2 and 4 were
+reconfirmed against the files rather than taken on the note's word: the four named presidents carry
+portraits, all 73 leader-year slots carry one with zero gaps, no year lacks a photograph. All
+thirteen names sit in `years.json` at exactly the year and office given, the 1997-98 Legislative
+Research chair included, where Gailor and Guillory are both recorded as the note says. On
+`archive.org`, `talisman1994west`, `1996west` and `1999west` return an empty `files` list while
+`talisman1975west` returns 22, so the coverage claim is right. On TopSCHOLAR,
+`cgi/viewcontent.cgi` returns 403 behind Cloudflare's challenge page and `dlsc_ua_records/4686/`
+returns 200, exactly as described. Blake Napper's one old post is real, 13 February 2003, quoting a
+Louisville freshman of that name on a subject unconnected to student government, with
+`media?parent=57154` empty; declining to use it was right.
+
+**The one that matters.** The note closed ShyAnte'e Williams as "genuinely zero posts on
+wkuherald.com mention her under any spelling", on an empty result for the query `ShyAntee`. The
+*Herald* names her twice. The stem `ShyAnte` returns the election preview of 19 September 2022
+listing her among the candidates for graduate student senator, and the results report of
+21 September 2022 giving her the seat as "Shy'Ante Williams" — the apostrophe in a different place,
+which is why a single query missed both.
+
+And this archive already held both citations. Her entry at
+`2022-23.organization.senate.officers[27]` carries them as `src2` and `src3`, and her profile
+paragraph is written out of them. The file the run read the name out of was carrying, two keys below
+the name, the evidence that the name is in the paper.
+
+The photograph conclusion survives the loss of its reasoning. Neither article has an image of her:
+the preview's only photograph is Sean McInnis's group shot of the executive cabinet listening to
+senate nominees on 30 August 2022, whose caption names no individual, and the results piece has no
+attached media. So nothing was wrong on the live site. But the note had recorded a false reason and
+closed a live lead on it, and the next pass would have skipped the name without looking. Rescued
+rather than cut: the section now records the lead as open, both spellings, both citations, and the
+instruction to read a roster entry's own sources before reporting a name absent from a publication.
+
+Corrected in the same commit: "all 90 prior" and "90-plus reports now on file" became 79 and 80,
+which is what `ls .research/photo-run-*.md | wc -l` gives. "One hit" for Napper became two, the
+other a 2011 football roster item. And the Napper passage had characterised a living private
+individual's opinion on a subject unrelated to his SGA service; the load-bearing facts are kept and
+the characterisation is gone.
+
+## The pattern this is the second instance of
+
+#801 this morning corrected a Carter Smith portrait the photograph routine had reported as needed
+when `photos.json` had carried it since 12 October. This is the same fault in a different place: a
+search run without first reading the record the name came out of. The note's own closing advice — 
+grep `.research/photo-run-*.md` for a name before spending time on it — is good, and wants one more
+line beside it: **grep the data for it too.** Twice in one day the archive knew the answer the
+routine went looking for.
+
+## Traps checklist
+
+No advance notice written up as a report. No chair recorded as an officer and no bill author
+recorded as a member; the note adds no roster data. No surname-only match — the one name-identity
+question in it, Napper, is correctly left unresolved. No changed-surname duplicate. No April
+election result filed in the wrong academic year. Nothing against the settled facts, and no
+contributor edit in the diff.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0. `check_contrib.py` exit 0. CI `build` green on d1ef5e7
+before the merge. `check_duplicates.py` exits 1 by its reporting convention and flags the standing
+baseline of four pairs and one same-source pair. All five are pre-existing on main — the diff
+touched no data — and all five were re-read at source this pass and are genuinely separate
+business: the November 1997 driver-card bill against the Herald's distribution report three months
+later; Bill #92-01-S introduced against the amended bill failing nine days on; the Civil Liberties
+Union planning court action against Associated Students endorsing the suit a month later; concern
+voiced at the September 2003 meeting against the legislation passed unanimously in October; and
+article 97612's two pieces of business from one meeting. Nothing merged.
+
+## Counts after this pass
+
+61 years, 1964 events, 60 presidents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account, 48 people under more than one spelling, 308 documents, 1111 pieces
+of legislation all present and real PDFs, 4945 search records. 5 photographs withdrawn at build as
+no longer held or barred. 1311 citations name a volume and number and each opens that issue; 1318
+quoted spans, none reaching 15 words. No count moves: the pass merged a research note and a
+correction to it.
+
+## Still open
+
+Everything the earlier passes of today left open stands. ShyAnte'e Williams's portrait is now
+properly open rather than falsely closed, with the search advice recorded. Xavier Spiess's withheld
+portrait still needs the `years.json` roster entry the photograph routine is not allowed to make.
+The Boka spelling has two contemporaneous sources against the plaque and wants a decision rather
+than more searching. The Steve Wilson portrait and its three-men-of-one-name problem, the unadded
+2021 Dahmer remand, the Hawkins / Vuleta seat conflict, the election-year filing convention and the
+2013-14 publication-date filing are all unchanged. The suggestion that `check_data.py` should test
+the date in a citation label, not only the volume and number, stands unbuilt.
+`editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are not to be merged and were
+not touched.
+
+The 189-slot portrait gap did not move, for the fifth time today, and the blocker is unchanged:
+`cgi/viewcontent.cgi` and `do/search` are the only route into the Talisman pages and pre-2011
+Herald scans where most of the 157 live, and both are closed. `web.archive.org` returned 403 to
+this session too, so the Wayback route into the old SGA officer pages was shut as well. The
+routine's effort is not the constraint, and it should be allowed to say so briefly rather than
+re-run exhausted searches — but the ShyAnte'e correction shows the one kind of work still
+available to it: the leads already in the file, reread properly.
+
 # 16 October 2026 (editor, fifth review) — an empty queue, fourteen claims read at source, and the archive's PDF route is the only thing closed
 
 ## What was open
@@ -49402,3 +49523,137 @@ and pre-2011 Herald scans where most of the 157 live, and both are closed. The r
 swept wkuherald's media API across every cited article and found nothing further. Until the
 digitalcommons routes reopen there is little for this routine to do but confirm that, and it should
 be allowed to say so briefly rather than re-run exhausted searches.
+
+---
+
+# 17 October 2026 — the citation-date check, built; and a date the catalogue gets wrong
+
+The merge queue was empty. No pull request was open, and the three research branches that carry
+no pull request are the superseded August ones with no merge base on `main`. So this pass spent
+itself on the standing suggestion no pass had yet acted on, and on reading published claims at
+their sources.
+
+## The check that was proposed and never built
+
+`check_data.py` tested that a citation's volume and number matched the issue its link opens. It
+did not test the date in the same label, and several passes have recorded that it should. It does
+now, and it bites: feeding it a label reading `Herald 45:23, 12 Sep 1966` over a link to the issue
+of 12 May 1966 fails the run with exit 1.
+
+The date is read only where it directly follows the volume and number, as `67:25, 21 Nov 1991`.
+Anchoring it there matters. A first attempt read any date anywhere in the label and reported 14
+failures, 13 of them photograph captions whose prose names a date for quite another reason — the
+year a person held an office, not the day the yearbook appeared. An unanchored check would have
+been retired as noise inside a week.
+
+**1,297 citations name both a volume and number and a day. Every one of them matches the issue it
+opens, bar one.**
+
+## The one, and why the archive is right and the catalogue is wrong
+
+`photos.json` cites `Herald 67:25, 21 Nov 1991`. TopSCHOLAR's own Publication Date field for that
+record reads **10-21-1991**, and the landing page was opened to confirm the harvested index had
+not mangled it. It had not: the catalogue really does say October.
+
+The catalogue is wrong.
+
+- No. 24 is 19 Nov 1991 and No. 26 is 26 Nov 1991. An issue of 21 October would fall two weeks
+  before No. 20 (5 Nov) and run the numbering backwards.
+- Every issue of Vol. 67 from No. 20 to No. 29 falls on a Tuesday or a Thursday. 21 October 1991
+  is a Monday. 21 November 1991 is a Thursday, sitting exactly between No. 24 and No. 26.
+
+The archivist typed 10 for 11. The label stands as it is.
+
+This is recorded in the checker as a one-entry exception, and deliberately **not** as a skip. A
+skip would have been a blind spot: a later pass, or a helpful routine reconciling labels against
+the catalogue, could have filed the catalogue's wrong October date and nothing would have
+objected. The exception instead names the date the archive should carry, so writing `21 Oct 1991`
+into that label now fails the run with a message saying the catalogue is the thing that is wrong.
+Both directions were tested.
+
+## A publication day the record does not give: the class is closed
+
+Yesterday's fifth review found `Herald 49:50` cited as `1 May 1970` when TopSCHOLAR gives only
+`5-1970`, and cut the day. That raised the obvious question nobody had asked: how many others.
+
+The harvested index cannot answer it. A month-only record is stored as `YYYY-MM-01`, exactly like
+a record genuinely published on the first, so the two are indistinguishable locally. 22 citations
+across 20 records assert a day of 1 against such a date.
+
+**All 20 landing pages were opened, paced, and all 20 carry a full date with an explicit day of 1**
+— `5-1-1969`, `10-1-1981`, `4-1-1999` and so on, against the `5-1970` that marks a month-only
+record. Every one of those citations is correct. `49:50` was the only instance, and the class is
+closed. Recorded here so a later pass does not spend another twenty paced requests re-deriving it.
+
+## What was read at source
+
+Twenty-five claims, all of them held.
+
+- `dlsc_ua_records/1824`, the founding entry. The abstract reads "First Congress of Associated
+  Students officers elected in May 1966" and the comments place the document in UA3/3/1 Kelly
+  Thompson Correspondence/Subject File, Box 17, Folder 3. Yesterday's trim was right on both
+  counts: the record gives the officers, not a seated Congress, and it is not labelled a roster.
+- `sga/Legislation/Resolutions/72` is Resolution 95-3-S, Dogwood Avenue Crosswalk, proposing a
+  painted crosswalk to the parking garage. `Resolutions/71` is Resolution 95-4-S, Big Red Way
+  Trash Cans, requesting six trash cans between the parking garage and Smith Stadium. The 1994-95
+  entry describes both accurately and now cites both.
+- `dlsc_ua_records/4944` reads `5-1970` with no day, and its index carries "Koch, Dana. Deplores
+  Destruction - Kent State Shootings", so the entry's reasoning that the issue belongs to the
+  second half of May stands on the record rather than on inference alone.
+- `dlsc_ua_records/7776`, and the twenty publication dates above.
+
+## Traps
+
+Nothing to catch, and little surface to catch it on: no event, officeholder or year attribution
+is asserted anywhere in this pass. No advance notice written up as a report. No committee chair
+promoted to officer, no surname match, no changed-surname duplicate, no April result filed into
+its own year, no `Contributed-By` trailer. Nothing touches a settled fact; the 67:25 exception
+defends a correct date against a later pass rather than reopening anything.
+
+## Cut
+
+Nothing. No published claim failed.
+
+## Routes
+
+- `digitalcommons.wku.edu` landing pages: open throughout, 23 requests at one every 3 seconds, no
+  403 and no backoff needed.
+- `web.archive.org`: **down from here this pass.** Two attempts, both killed by the proxy with a
+  connection reset before any response. So the 22 October 2013 capture cited in yesterday's Boka
+  note could not be re-read, and is left exactly as published — a failed fetch is not evidence
+  against a claim, and nothing was cut on it.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0. `check_contrib.py` exit 0. `check_duplicates.py` exits 1
+by its reporting convention and flags the same four pairs and one same-source pair as the standing
+baseline, all pre-existing and all genuinely separate business. Nothing merged.
+
+## Counts after this pass
+
+61 years, 1964 events, 60 presidents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account, 48 people under more than one spelling, 308 documents, 1111 pieces
+of legislation, 4945 search records, 1407 leader portraits and 74 year photographs. 5 photographs
+withdrawn at build as no longer held or barred. 1311 citations name a volume and number and each
+opens that issue; **1,297 of those also name a day, and each matches the issue's own date**; 1318
+quoted spans, none reaching 15 words. No count moves: this pass changed no data.
+
+## Still open
+
+Unchanged, none of it this pass's to decide: the election-year filing convention and the 2013-14
+publication-date filing; **the Boka spelling**, which has two contemporaneous sources against the
+plaque and wants the owner's decision — CLAUDE.md's rule is to flag spelling doubts and not fix
+them, and renaming a president is not a routine's call, so it stays flagged; Xavier Spiess's
+roster entry, which needs a `years.json` edit and a source putting him in an office, there being
+none in the record as it stands; the Steve Wilson portrait and its three-men-of-one-name problem;
+the unadded 2021 Dahmer remand; and the Hawkins / Vuleta seat conflict.
+`editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are not to be merged and were
+not touched.
+
+The 189-slot portrait gap did not move. `cgi/viewcontent.cgi` and `do/search` remain the only
+route into the Talisman pages and pre-2011 Herald scans where most of the 157 live.
+
+One suggestion for whoever next touches the harvester: `harvest_herald_index.py` throws away the
+precision of TopSCHOLAR's Publication Date, storing `5-1970` and `5-1-1970` identically as
+`1970-05-01`. Keeping a flag for month-only records would let `check_data.py` catch a cited day
+the record does not give, which is the one thing it still cannot see.
