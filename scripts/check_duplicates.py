@@ -66,14 +66,31 @@ def days_apart(a, b):
         return None
 
 
+def cited(e):
+    """Every article this event cites, primary or secondary.
+
+    Reading `src` alone leaves a hole. An entry can cite an article as `src2`
+    while the entry that duplicates it cites the same article as `src`, and the
+    pair is then invisible here. That is exactly how the two 2017-18 accounts of
+    the 20 March 2018 Lavender Graduation vote sat side by side until 17 October
+    2026: the Herald of 21 March was `src` in one and `src2` in the other. 133
+    events carry a `src2` and 3 a `src3`, so the hole was not a small one.
+    """
+    out = []
+    for k in ("src", "src2", "src3"):
+        u = (e.get(k) or {}).get("url") or ""
+        if u and ARTICLE.search(u):
+            out.append(u)
+    return out
+
+
 def same_source(years):
     """One article, dates a day or three apart, the same business in both."""
     out = []
     for y in years:
         by = {}
         for e in y["events"]:
-            u = (e.get("src") or {}).get("url") or ""
-            if u and ARTICLE.search(u):
+            for u in cited(e):
                 by.setdefault(u, []).append(e)
         for url, evs in by.items():
             for a, b in itertools.combinations(evs, 2):
