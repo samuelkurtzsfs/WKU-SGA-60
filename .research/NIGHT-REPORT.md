@@ -49523,3 +49523,137 @@ and pre-2011 Herald scans where most of the 157 live, and both are closed. The r
 swept wkuherald's media API across every cited article and found nothing further. Until the
 digitalcommons routes reopen there is little for this routine to do but confirm that, and it should
 be allowed to say so briefly rather than re-run exhausted searches.
+
+---
+
+# 17 October 2026 — the citation-date check, built; and a date the catalogue gets wrong
+
+The merge queue was empty. No pull request was open, and the three research branches that carry
+no pull request are the superseded August ones with no merge base on `main`. So this pass spent
+itself on the standing suggestion no pass had yet acted on, and on reading published claims at
+their sources.
+
+## The check that was proposed and never built
+
+`check_data.py` tested that a citation's volume and number matched the issue its link opens. It
+did not test the date in the same label, and several passes have recorded that it should. It does
+now, and it bites: feeding it a label reading `Herald 45:23, 12 Sep 1966` over a link to the issue
+of 12 May 1966 fails the run with exit 1.
+
+The date is read only where it directly follows the volume and number, as `67:25, 21 Nov 1991`.
+Anchoring it there matters. A first attempt read any date anywhere in the label and reported 14
+failures, 13 of them photograph captions whose prose names a date for quite another reason — the
+year a person held an office, not the day the yearbook appeared. An unanchored check would have
+been retired as noise inside a week.
+
+**1,297 citations name both a volume and number and a day. Every one of them matches the issue it
+opens, bar one.**
+
+## The one, and why the archive is right and the catalogue is wrong
+
+`photos.json` cites `Herald 67:25, 21 Nov 1991`. TopSCHOLAR's own Publication Date field for that
+record reads **10-21-1991**, and the landing page was opened to confirm the harvested index had
+not mangled it. It had not: the catalogue really does say October.
+
+The catalogue is wrong.
+
+- No. 24 is 19 Nov 1991 and No. 26 is 26 Nov 1991. An issue of 21 October would fall two weeks
+  before No. 20 (5 Nov) and run the numbering backwards.
+- Every issue of Vol. 67 from No. 20 to No. 29 falls on a Tuesday or a Thursday. 21 October 1991
+  is a Monday. 21 November 1991 is a Thursday, sitting exactly between No. 24 and No. 26.
+
+The archivist typed 10 for 11. The label stands as it is.
+
+This is recorded in the checker as a one-entry exception, and deliberately **not** as a skip. A
+skip would have been a blind spot: a later pass, or a helpful routine reconciling labels against
+the catalogue, could have filed the catalogue's wrong October date and nothing would have
+objected. The exception instead names the date the archive should carry, so writing `21 Oct 1991`
+into that label now fails the run with a message saying the catalogue is the thing that is wrong.
+Both directions were tested.
+
+## A publication day the record does not give: the class is closed
+
+Yesterday's fifth review found `Herald 49:50` cited as `1 May 1970` when TopSCHOLAR gives only
+`5-1970`, and cut the day. That raised the obvious question nobody had asked: how many others.
+
+The harvested index cannot answer it. A month-only record is stored as `YYYY-MM-01`, exactly like
+a record genuinely published on the first, so the two are indistinguishable locally. 22 citations
+across 20 records assert a day of 1 against such a date.
+
+**All 20 landing pages were opened, paced, and all 20 carry a full date with an explicit day of 1**
+— `5-1-1969`, `10-1-1981`, `4-1-1999` and so on, against the `5-1970` that marks a month-only
+record. Every one of those citations is correct. `49:50` was the only instance, and the class is
+closed. Recorded here so a later pass does not spend another twenty paced requests re-deriving it.
+
+## What was read at source
+
+Twenty-five claims, all of them held.
+
+- `dlsc_ua_records/1824`, the founding entry. The abstract reads "First Congress of Associated
+  Students officers elected in May 1966" and the comments place the document in UA3/3/1 Kelly
+  Thompson Correspondence/Subject File, Box 17, Folder 3. Yesterday's trim was right on both
+  counts: the record gives the officers, not a seated Congress, and it is not labelled a roster.
+- `sga/Legislation/Resolutions/72` is Resolution 95-3-S, Dogwood Avenue Crosswalk, proposing a
+  painted crosswalk to the parking garage. `Resolutions/71` is Resolution 95-4-S, Big Red Way
+  Trash Cans, requesting six trash cans between the parking garage and Smith Stadium. The 1994-95
+  entry describes both accurately and now cites both.
+- `dlsc_ua_records/4944` reads `5-1970` with no day, and its index carries "Koch, Dana. Deplores
+  Destruction - Kent State Shootings", so the entry's reasoning that the issue belongs to the
+  second half of May stands on the record rather than on inference alone.
+- `dlsc_ua_records/7776`, and the twenty publication dates above.
+
+## Traps
+
+Nothing to catch, and little surface to catch it on: no event, officeholder or year attribution
+is asserted anywhere in this pass. No advance notice written up as a report. No committee chair
+promoted to officer, no surname match, no changed-surname duplicate, no April result filed into
+its own year, no `Contributed-By` trailer. Nothing touches a settled fact; the 67:25 exception
+defends a correct date against a later pass rather than reopening anything.
+
+## Cut
+
+Nothing. No published claim failed.
+
+## Routes
+
+- `digitalcommons.wku.edu` landing pages: open throughout, 23 requests at one every 3 seconds, no
+  403 and no backoff needed.
+- `web.archive.org`: **down from here this pass.** Two attempts, both killed by the proxy with a
+  connection reset before any response. So the 22 October 2013 capture cited in yesterday's Boka
+  note could not be re-read, and is left exactly as published — a failed fetch is not evidence
+  against a claim, and nothing was cut on it.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0. `check_contrib.py` exit 0. `check_duplicates.py` exits 1
+by its reporting convention and flags the same four pairs and one same-source pair as the standing
+baseline, all pre-existing and all genuinely separate business. Nothing merged.
+
+## Counts after this pass
+
+61 years, 1964 events, 60 presidents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account, 48 people under more than one spelling, 308 documents, 1111 pieces
+of legislation, 4945 search records, 1407 leader portraits and 74 year photographs. 5 photographs
+withdrawn at build as no longer held or barred. 1311 citations name a volume and number and each
+opens that issue; **1,297 of those also name a day, and each matches the issue's own date**; 1318
+quoted spans, none reaching 15 words. No count moves: this pass changed no data.
+
+## Still open
+
+Unchanged, none of it this pass's to decide: the election-year filing convention and the 2013-14
+publication-date filing; **the Boka spelling**, which has two contemporaneous sources against the
+plaque and wants the owner's decision — CLAUDE.md's rule is to flag spelling doubts and not fix
+them, and renaming a president is not a routine's call, so it stays flagged; Xavier Spiess's
+roster entry, which needs a `years.json` edit and a source putting him in an office, there being
+none in the record as it stands; the Steve Wilson portrait and its three-men-of-one-name problem;
+the unadded 2021 Dahmer remand; and the Hawkins / Vuleta seat conflict.
+`editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are not to be merged and were
+not touched.
+
+The 189-slot portrait gap did not move. `cgi/viewcontent.cgi` and `do/search` remain the only
+route into the Talisman pages and pre-2011 Herald scans where most of the 157 live.
+
+One suggestion for whoever next touches the harvester: `harvest_herald_index.py` throws away the
+precision of TopSCHOLAR's Publication Date, storing `5-1970` and `5-1-1970` identically as
+`1970-05-01`. Keeping a flag for month-only records would let `check_data.py` catch a cited day
+the record does not give, which is the one thing it still cannot see.
