@@ -50090,3 +50090,90 @@ A tooling note for the next run, in the spirit of the `pdftotext` warning: in th
 installs into Python 3.13's dist-packages while `python3` is 3.11, so `pip install pymupdf` reports
 success and the import still fails. `python3 -m pip install pymupdf` puts it where the interpreter
 will find it.
+
+# 17 October 2026 (editor, fifth scheduled review) — a negative result verified by re-running it, and five research branches that cannot be merged
+
+## What was reviewed
+
+One open pull request, #813, "Research: photographs, 17 October second scheduled pass". Merged to
+main as `b6d052d`. Nothing was cut, because there was nothing in it to cut: the branch adds a
+single file under `.research/` and changes nothing under `data/`, so the generated site came out
+byte-identical to what main already published. The merge published no new claim about any person.
+
+That is the right shape for a negative result. The run went looking for officer portraits on
+wkuherald.com, found none that the archive did not already hold, and recorded the dead end instead
+of leaving it for the next pass to walk into.
+
+## What was verified, and how
+
+Fourteen claims, all of which held. Six reproduced against the data: the portrait-gap figures
+(948 officer slots, 189 without a portrait, 159 distinct people, 157 with no portrait in any year,
+an exact match), all four priority-one presidents carrying portraits, zero leader terms without a
+portrait across 67 presidential and 6 regent terms, zero of 61 years without a photograph, exactly
+113 distinct people in the 2001-02-through-2025-26 slice of the gap as claimed, and the Carter
+Smith photograph present in `data/photos.json` with its file on disk.
+
+Eight checked at source. The Carter Smith caption is verbatim on wkuherald.com, down to "Sophomore
+Senator"; the swearing-in is dated 22 September 2026 and the article 23 September, which files
+correctly in 2026-27; the photographer credit and article title both confirmed. The TopSCHOLAR PDF
+route returns the Cloudflare challenge on the article id the report named. The Wayback Machine
+still resets at the TLS layer. TopSCHOLAR item landing pages are open.
+
+The claim worth the most scrutiny was the negative one — that a full pass of 113 names turned up
+nothing. A negative result is the easiest kind to fake and the hardest to check, so it was re-run
+rather than read: a random 12 of the 113 names, same method, Herald search with the surname tested
+against each returned post's own caption. Zero identifications, matching the report.
+
+The report's account of its own false positives held up too, which is the part that made it
+verifiable. The cruder version of the check scored three caption hits on `Mark Henry` — Henry
+Hardin Cherry Hall, a receiver named Matthew Henry, a guard named Don McHenry — and not one of
+them is the man. That is exactly the trap the report says it tightened the check to exclude.
+A run that writes down the false positives it rejected can be audited; one that reports only its
+conclusions cannot.
+
+Traps checklist: nothing tripped, and little exposed to trip. No event, officer or person is
+added, so there is no advance-notice, wrong-year or chair-as-officer risk. Surname matching was
+refused and the refusals were confirmed. The one living person named is described only as his own
+caption describes him, in eleven words.
+
+## Checks
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. Current counts: 61 years,
+1,964 events, 60 presidents, 1,111 pieces of legislation with every file present and a real PDF,
+1,311 volume-and-number citations each opening the issue it names, 2,651 recorded terms of office
+held by 1,809 people, 98% of them carrying an account of what the person did.
+
+`check_duplicates.py` reports four title pairs and one same-source pair. All five are pre-existing
+on main and all five are genuinely separate events: the 1997-98 pair is a bill four months before
+the cards were distributed, 1991-92 an introduction and then the defeat of the same bill, 1971-72
+a lawsuit planned in February and endorsed in March, 2003-04 the debate and then the vote, and the
+2026-27 pair is committee business and an election timetable reported out of one meeting. Nothing
+merged.
+
+## Still open
+
+The five research branches from late August — `research-profiles`, `research-roster-1970s-80s`,
+`research-roster-2010s`, `research-roster-2020s` and `research-senate` — have no open pull request
+and **no merge base with main**. They are snapshots of the superseded repository, not forks of it,
+and merging any one of them would delete the full Herald index, the name aliases, the contributor
+layer and the validators, exactly as the landing notes warn. They were left alone. Anything in
+them that main genuinely lacks has to be lifted file by file onto a branch cut from current main;
+that is a deliberate piece of work for a session with time for it, not something to do in passing.
+
+Everything the earlier passes left open still stands: the Boka spelling, which wants the owner's
+decision; Xavier Spiess's roster entry and its missing source; the Steve Wilson portrait; the 2021
+Dahmer remand; the Hawkins / Vuleta seat conflict; the publication-date filing convention and the
+2017-18 pair sitting across two dates because of it; the 26 March 2018 committee-chair amendment;
+and the Mark Clark / Divya Gangavelli committee-chair lead.
+
+The 189-slot portrait gap did not move. It is now closed on every route this session can reach:
+wkuherald.com by name rather than by sample, the TopSCHOLAR PDF route and the Wayback Machine by
+the network. Re-testing the two blocked routes stays cheap and worth keeping, but a further pass
+that re-confirms the same gap against the same closed doors is not the best use of a run. The gap
+is also made almost entirely of committee chairs, judicial council members and individual senators,
+whom the Herald's photo desk did not photograph, so it may be a gap that stays open. In an archive
+whose first rule is that an empty slot beats a wrong one, that is an acceptable place to leave it.
+
+A housekeeping note: `.research/NIGHT-REPORT.md` carries two duplicated top-level headings, for
+24 and 25 August, left behind by an old keep-both conflict resolution. It is an internal log and
+nothing renders from it, so it was not touched this pass.
