@@ -49657,3 +49657,93 @@ One suggestion for whoever next touches the harvester: `harvest_herald_index.py`
 precision of TopSCHOLAR's Publication Date, storing `5-1970` and `5-1-1970` identically as
 `1970-05-01`. Keeping a flag for month-only records would let `check_data.py` catch a cited day
 the record does not give, which is the one thing it still cannot see.
+
+---
+
+# 17 October — scheduled editorial review
+
+## What was open
+
+One pull request, #808, `research-photos`, the photograph routine's fifth scheduled pass of
+16 October. The three branches this routine's standing brief still names as stale — #6
+photographs, #7 the 1980s, #8 the 2020s — have been closed since 18 August and want no further
+attention; the brief is out of date on them, not the repository.
+
+## #808 — merged as is, no cuts
+
+The diff was one file, `.research/photo-run-2026-10-16-fifth-scheduled.md`, 82 lines added and
+nothing removed. `data/` was byte-identical to main and the merge base was already main's tip, so
+the branch needed no catching up and nothing in it could reach the published site.
+
+Eighteen claims checked, eighteen held. Reproduced locally to the figure: the 189-slot gap across
+159 people, 157 of them with no portrait in any year; all four priority-1 portraits present; zero
+leader-portrait gaps and zero years without a photograph; and the report's 188-of-189 claim, which
+is exact — of 159 distinct names in the gap, only ShyAnte'e Williams is absent from the 80 prior
+photograph reports. Opened against their sources: `cgi/viewcontent.cgi` answered 403 behind a
+Cloudflare challenge, `web.archive.org` reset the connection, `wkuherald.com` and the
+digitalcommons landing pages answered 200 — which matches the report's careful scoping of the
+block to the `cgi` route rather than the whole host. The two Herald citations behind the ShyAnte'e
+Williams spelling both read verbatim as reported, the paper giving "ShyAnte'e Williams" among the
+candidates on 19 September 2022 and "Shy'Ante Williams" in the results two days later, apostrophe
+moved. Her roster entry carries both, which is the flag-don't-fix rule working as intended.
+
+The pass's Cody Cox aside is the part worth recording. It warns the next reader not to read the
+current Judicial Council page as doubt about Cox's 2016-17 service, and this review nearly wrote
+that aside up as unsupported: the 2016 path is now a 404 and the reachable `sga/judicial/` still
+lists Kelsey Luttrell under a 2019 modification date. Searching rather than guessing paths, which
+is what the pass itself did, found the page — Gammons chief justice, Gavin Grawe associate chief,
+modified 2/6/25 — and SGA's own Judicial Council minutes of 20 November 2024 confirm Gammons in
+the chair independently. So the page reflects 2024-25 and says nothing about 2015-17, the warning
+is sound, and Cox's entry stands on six sources, one of them a council page contemporaneous with
+his term. The lesson for the routine is narrow and has gone to the pull request: cite the URL of a
+page you found by search. The aside gave a modification date and two names and no link, and
+rebuilding it cost more than the claim was worth.
+
+No trap tripped. No event claims were added, so no advance notice could be dressed up as a report;
+no roster changed, so no committee chair became an officer and no one was matched by surname; no
+person was added, so no changed surname made a duplicate; nothing was re-litigated from the settled
+facts. Living people are named only by office and by the absence of a photograph. No
+`Contributed-By` trailers, so no contributor edit was in the diff, and all six commits author as
+`SGA 60` with no tool attribution.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0. `check_contrib.py` exit 0. `check_duplicates.py` exits 1
+by its reporting convention and flags the same four pairs and one same-source pair as the standing
+baseline. All five are pre-existing on main and all five are genuinely separate business: a bill
+introduced in January 1992 and defeated in February, designated driver cards funded in November
+1997 and distributed the following February, SGA's objection to plus/minus grading in September
+2003 and its vote against it in October, a month between the Civil Liberties Union filing and
+Associated Students endorsing it, and two pieces of different business carried in one article on
+the meeting of 22 September 2026. Nothing to combine.
+
+## Counts after this pass
+
+61 years, 1964 events, 60 presidents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account, 48 people under more than one spelling, 308 documents, 1111 pieces
+of legislation, 4945 search records, 1407 leader portraits and 74 year photographs. 5 photographs
+withdrawn at build as no longer held or barred. 1311 citations name a volume and number and each
+opens that issue; 1297 of those also name a day, and each matches the issue's own date bar the one
+the catalogue dates wrong; 1318 quoted spans, none reaching 15 words. No count moves: the merged
+pass changed no data.
+
+## Still open
+
+Unchanged, and none of it this review's to decide: the election-year filing convention and the
+2013-14 publication-date filing; the Boka spelling, which has two contemporaneous sources against
+the plaque and wants the owner's decision, renaming a president being no routine's call; Xavier
+Spiess's roster entry, which needs a `years.json` edit and a source putting him in an office,
+there being none in the record as it stands — he appears in 2025-26 only in event prose and in the
+notes on other officers; the Steve Wilson portrait and its three-men-of-one-name problem; the
+unadded 2021 Dahmer remand; and the Hawkins / Vuleta seat conflict.
+`editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are not to be merged and were
+not touched.
+
+The 189-slot portrait gap did not move, and on the evidence of six passes in one day it will not
+move under the present network access. `cgi/viewcontent.cgi` and `web.archive.org` are the two
+routes that would open new names — the first into 1990s Talisman page images, the second into the
+old `wku.edu/Dept/Org/Student/SGA` officer pages — and both were closed again when retested today.
+Whoever next schedules this routine should consider that a sixth and seventh pass over the same
+gap in one day buys nothing, and that the photograph agent's time is better spent on the years
+whose officer rosters are thin than on re-walking 157 names whose only plausible source is behind
+a challenge page.
