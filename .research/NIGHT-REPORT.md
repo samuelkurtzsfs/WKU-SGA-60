@@ -49747,3 +49747,157 @@ Whoever next schedules this routine should consider that a sixth and seventh pas
 gap in one day buys nothing, and that the photograph agent's time is better spent on the years
 whose officer rosters are thin than on re-walking 157 names whose only plausible source is behind
 a challenge page.
+
+# 17 October 2026 (editor, second scheduled review) — an empty queue, sixteen claims read at source, and a bill's plan published as accomplished fact
+
+## What was open
+
+Nothing. `gh api repos/.../pulls?state=open` returns `[]`, and the push probe returned
+`* [new branch] HEAD -> access-probe`, so this was a full-mode pass with nothing in the queue to
+merge. `gh pr list` still answers 403 naming GraphQL, which is not the platform gate. The brief
+still names #6, #7 and #8 as stale since 4 August; all three have been closed unmerged since
+18 August and the repository is now at #809. `research-photos`, whose work merged as #808 at 03:27,
+carries no data this archive lacks: `git diff origin/main origin/research-photos -- . ':!site'` is
+90 lines of night report that main has and the branch does not. The other five `research-*`
+branches report no merge base and are the 4 August snapshots AGENT-LANDING.md warns about; left
+alone, as every pass since has left them. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset,
+so route two remains unavailable and route one was again the only way to land anything.
+
+## Sixteen claims read at source
+
+With no queue, the pass went at the published record instead, and sampled the kind of claim that
+has broken most often on this project: a specific number. One numeric event per year was drawn
+from the 159 that cite `wkuherald.com`, where the full text is readable rather than merely
+indexed, and each was opened and read against its entry. `web.archive.org` returned a connection
+reset again, so the years whose numeric claims rest on Wayback captures — 2004-05, 2006-07,
+2007-08, 2008-09 and 2009-10 — could not be checked this pass and are the obvious target for a
+run that finds that host open.
+
+All sixteen held, to the figure. The $800,000 of unbudgeted tuition and the shortage of 75 faculty
+in December 2002; the $15,000 to $17,000 cut announced by Nick Todd in February 2004; the 47.82
+percent and the tombstones outside DUC in May 2011; Dodds's 44 to 35 to 21 percent, with both
+vice-presidential races uncontested, in March 2012; the $80,000 paid and $40,000 returned in the
+Sun Belt, and Todd Stewart's $1 million to $1.5 million expectation, in April 2013; the Talisman's
+$93,000 proposed cut at 47 percent of a $198,000 budget, and the $127,000 including $45,000 of
+one-time funds, in December 2013; the scholarship programme's rise from $6,000 to $21,000 in
+August 2014; Topper Tavern's 480 of 2,132 ballots in November 2015; the 27-1 housing vote and the
+83 percent Twitter poll in February 2017; the 26-2 committee-chair bill in March 2018; Resolution
+5-18-F at 15-0, Bill 7-18-F's $300, and Wilson's 290,000 registered at 13 percent voting, in
+September 2018; the $5,000 hammock bill and Zaczek's objection to voting without figures in March
+2020; the $3,500 to four organisations in March 2021; the $10,000 organisational aid graded from
+58 applications, the $540 for five calculators and the 28 already lent, in October 2024; the
+60,000 meal transactions a week in February 2026; and the $500 cap within a $10,000 semester
+ceiling on a thirty-point scale in September 2026.
+
+Two of these were nearly written up as faults and were not, which is worth recording. The
+2015-16 pub-naming entry carries the 5 November narrowing from 12 names to 11, Sawyer Coffey's
+"out of respect for the organization" and Richey's 50 submitted names, none of which is in the
+12 November article its `src` names — but its `src2` is the 5 November article, and that article
+carries all three. And its two Coffeys are two people, Sawyer the director of public relations
+and Chase the Leitchfield junior who objected a week later; the entry keeps them apart correctly.
+The other was the 2017-18 "Lavender Graduation stoles", which the Herald of 28 March calls the
+Lavender Recognition Ceremony. Correcting the archive to the newspaper would have been wrong:
+"Funding for Lavender Graduation Stoles." is the title of Bill 13-18-S itself, and the bill records
+both names for the ceremony. Read the entry's own sources, and the legislation index, before
+reforming its wording.
+
+## The one that did not hold
+
+The 2017-18 entry dated 20 March 2018 was titled "SGA bought the stoles for Lavender Graduation"
+and said the measure "had passed the senate 28-5 the previous day", that the ceremony was "held on
+8 May 2018", and that SGA's "name and logo appeared on the programme". Its only source is Bill
+13-18-S, mirrored in this archive at `data/legislation/2017-18/bill-13-18-s.pdf`, and the bill is
+a March document written throughout in the future tense: the ceremony "will be an event on May 8,
+2018", and "our name and logo will appear on the event program". Nothing in the archive sources
+the purchase, the ceremony taking place, or the programme. This is the advance-notice trap in its
+other form — not a concert preview read as a review, but an appropriation's plan published as its
+outcome, which is what #785 and the 12 October laundry entry were.
+
+The date was wrong as well, and three sources agree against it. The bill's own face reads "First
+Reading: March 6th, 2018. Second Reading: March 20th, 2018"; the Herald of 21 March reports "its
+Senate meeting on Mar. 20" and "With a vote of 28-5, the bill passed"; and the Herald of 28 March
+has "At the previous SGA meeting on Mar. 20, the Senate voted by 28-5". So the vote fell on
+20 March, the day the entry is filed under, not the day before it. The archive already knew this:
+Jayden Thomas's profile in the same file reads "The bill passed on second reading, 20 March 2018."
+That is the third time in four days that a defect sat a few lines from the record disproving it,
+after the Carter Smith portrait in #801 and the ShyAnte'e Williams citations yesterday.
+
+Rescued rather than cut, since the bill proves a good deal. The entry is now "SGA funded stoles
+for Lavender Graduation" and gives the allocation, the $250 match from executive discretionary,
+the ceremony as planned for 8 May 2018 at the Augenstein Alumni Center, the name and logo as what
+the bill provided for, the authors — Chief of Staff Conner Hounshell with senators Mark Clark and
+Jayden Thomas — the sponsoring Committee for Diversity and Inclusion, both reading dates, and the
+fact that the posted form leaves the Pass, Fail and Other lines blank. The 28-5 tally is not on
+the bill, so it is now attributed to the Herald of 21 March, added as `src2`, and the entry closes
+by saying the purchase and the ceremony are not in the sources this archive holds, so that a later
+pass does not quietly restore them.
+
+## The settled facts, audited
+
+Checked against section 7 rather than assumed, because an archive that drifts on these loses more
+than an event. Norfleet sits at 1981-82 and not 1982-83. Zielke is 1969-70 and Lyne holds 1970-71
+alone. Payne is 1981-82 and Ragan 1982-83. Fiorella 1972-73 and Gregory McKinney 1974-75 are
+regents, not presidents. Reed Morgan is present at 1968-69 with role `unresolved`, explicitly not
+president and not regent, with the positive-evidence reasoning intact, while Straeffer holds the
+presidency and Paul Gerard III the regent seat. Carlene and Darlene Lodmell are two people in
+every year they appear — Student Affairs and Legislative Research chairs in 1995-96, Vice President
+and Secretary in 1996-97 — and `name-aliases.json` contains no entry linking them, which is what it
+should contain. Tom LaCivita is absent from `leaders` correctly: he was activities vice president,
+and the settled fact concerns his portrait, which `photos.json` carries with the page-image
+reasoning CLAUDE.md requires preserved. Nothing has moved.
+
+## Traps checklist
+
+The advance-notice trap tripped once and is handled above. No committee chair recorded as an
+officer: the Lodmell chairs sit under `senate.officers` with "Chairperson, ... Committee" in the
+office field, which states what they were. No bill author recorded as a member, and the reverse
+reading the old entry invited — "an objection its author declined to explain", of a bill McKinney
+did not write — is gone with the rewrite. No surname-only match; the two Coffeys and the two
+Dahmers, Jody and Andi, are each kept apart. No changed-surname duplicate. No April election
+result in the wrong academic year: the 2012 result verified this pass sits in 2011-12 and names
+Dodds president "for 2012-13", which is the convention. Living people are named only for what the
+cited reporting carries. No `Contributed-By` trailer in anything reviewed, so no contributor edit
+was in scope.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0. `check_contrib.py` exit 0. `check_duplicates.py` exits 1
+by its reporting convention and flags the same four pairs and one same-source pair as the standing
+baseline, unchanged by this edit. All five were re-read in the file this pass and are genuinely
+separate business: the driver cards funded in November 1997 and distributed the following February;
+Bill #92-01-S introduced on 28 January 1992 and failing on 6 February after amendment; the Civil
+Liberties Union planning court action in February 1972 and Associated Students endorsing the suit a
+month later; concern voiced against plus/minus grading in September 2003 and the legislation passed
+in October; and article 97612's two items of business from one meeting. Nothing to combine.
+
+## Counts after this pass
+
+61 years, 1964 events, 60 presidents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account, 48 people under more than one spelling, 308 documents, 1111 pieces
+of legislation all present and real PDFs, 4945 search records. 5 photographs withdrawn at build as
+no longer held or barred. 1311 citations name a volume and number and each opens that issue; 1297
+also name a day, each matching the issue's own bar the one the catalogue dates wrong; 1318 quoted
+spans, none reaching 15 words. No count moves: one event was rewritten, none added or removed.
+
+## Still open
+
+Everything the earlier passes left open stands, and none of it is this review's to decide: the
+Boka spelling, which has two contemporaneous sources against the plaque and wants the owner's
+decision, renaming a president being no routine's call — the Herald of 30 March 2012 read this
+pass spells it Keyana Boka, which is what the archive follows; Xavier Spiess's roster entry, which
+needs a source putting him in an office; the Steve Wilson portrait and its three-men-of-one-name
+problem; the unadded 2021 Dahmer remand; and the Hawkins / Vuleta seat conflict.
+`editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are not to be merged and were
+not touched.
+
+Two things this pass can hand forward. The publication-date filing convention now has a concrete
+anchor in 2017-18 as well: the entry at 2018-03-21 reports the 28-5 vote of 20 March under the
+Herald's publication date, while the bill fixes the meeting at 20 March, so whoever decides the
+convention should know the 2013-14 case is not isolated. And the Herald of 28 March 2018 reports
+the committee-chair amendment as failing "with a vote of 26-2" while reporting another amendment
+the same night passing 25-2 — figures that cannot both mean what they appear to. The archive
+reports what the source reports and should keep doing so; resolving it needs SGA's own minutes for
+that meeting, which are not in this archive.
+
+The 189-slot portrait gap did not move and was not worked this pass. `web.archive.org` was retested
+and is still closed, so the two routes that would open new names remain shut.
