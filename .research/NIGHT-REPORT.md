@@ -49901,3 +49901,79 @@ that meeting, which are not in this archive.
 
 The 189-slot portrait gap did not move and was not worked this pass. `web.archive.org` was retested
 and is still closed, so the two routes that would open new names remain shut.
+
+# 17 October 2026 (editor, third scheduled review) — a target list of thirteen Talisman volumes, checked record by record against the catalogue
+
+One pull request open, #811 "Research: photographs (rolling)" on `research-photos`, raised this
+morning. Its branch was level with main — merge base at main's tip, the earlier passes on it having
+already landed through their own pull requests — so the diff was one file: a new research note,
+108 lines, and not a single change to `data/`. Nothing in it reaches the public site. The three
+branches that had sat stale since 4 August, #6, #7 and #8, were found already closed by an earlier
+pass and needed nothing.
+
+A note is not a free pass. This one is a target list the next photograph run will act on, and a
+wrong record number there costs that run its session. So it was read as though it were data.
+
+## What was checked, and against what
+
+Every claim in the note that could be checked, was, and all of them held.
+
+The whole thirteen-row table of digitised *Talisman* volumes was opened record by record on
+TopSCHOLAR, one request at a time three seconds apart. Record number, `viewcontent.cgi` article id,
+published title and PDF file size match the note exactly in all thirteen — 2013 *Form* at
+`dlsc_ua_records/8696`, article 9683, 897.6 MB, through to 2022 *Illuminate* at `8898`, article
+9883, 87.1 MB. The sizes really were read off each item's own download link, as the note says, and
+not guessed.
+
+The rest of the note checked out the same way. `UA1C4/7 Student Groups & Association Photos` is
+`dlsc_ua_fin_aid/633`, article 1632, and its abstract does read "not otherwise listed", which is
+the ground the note closes it on. `cgi/viewcontent.cgi` still answers 403 with the Cloudflare
+challenge page. archive.org still holds exactly nineteen `talisman*west` identifiers — 1943, 1946,
+1947, 1963-65, 1971-81, 1986, 1987 — the precise list the note gives, so its finding that the
+holding has not grown is sound. Locally, `portrait_gap.py` reports 948 officer slots, 189 without a
+portrait, held by 159 people of whom 157 have none anywhere, and the four year-counts the note
+singles out are right to the number: 2014-15 ten, 2016-17 twelve, 2021-22 nine, 2022-23 nine.
+
+## The one correction
+
+The table's last three rows are titled on TopSCHOLAR simply "Talisman", "Talisman: Forge" and
+"Talisman: Illuminate", with no year in the title at all, under a column headed "academic-year label
+as published". The years are real and sourced — they are the catalogue's own `bepress_citation_date`
+for those records — but they are a cataloguing field rather than the volume's own statement of
+itself, which is a weaker thing under a heading that says "as published". A paragraph was added
+saying so, so that the next run knows which rows carry the year on their face and which take it
+from the catalogue. Nothing was cut, because nothing was unsupported.
+
+The note's own handling of its evidence is worth recording as the right pattern: it states plainly
+that nothing in the table was opened or read, that this is a target list and not a set of findings,
+and it flags rather than guesses at which academic year each volume covers, warning whoever opens
+the PDFs to read the masthead instead of the cover year. That is the advance-notice discipline
+applied to a lead rather than to an event, and it is what kept the run honest.
+
+## Merged
+
+All three conditions held, so #811 was merged. `build.py` clean, `check_data.py` and
+`check_contrib.py` both exit 0, `check_duplicates.py` offering four title pairs and one same-source
+pair, every one of them genuinely separate business and none of them this pull request's doing: a
+bill introduced in January 1992 and the same bill failing in February is two events, not one, and
+the designated-driver cards announced in November 1997 and distributed in February 1998 likewise.
+
+Counts are unmoved, as they must be for a diff that touches no data: 61 years, 1964 events, 60
+presidents, 2651 terms of office held by 1809 people, 2614 of them (98%) carrying an account, 48
+people under more than one spelling, 308 documents, 1111 pieces of legislation all present and real
+PDFs, 4945 search records, 5 photographs withdrawn at build as no longer held or barred. 1311
+citations name a volume and number and each opens that issue; 1297 also name a day, each matching
+the issue's own bar the one the catalogue dates wrong; 1318 quoted spans, none reaching 15 words.
+
+## Still open
+
+Everything the earlier passes left open stands and none of it moved: the Boka spelling, which wants
+the owner's decision because renaming a president is no routine's call; Xavier Spiess's roster entry
+and its missing source; the Steve Wilson portrait; the 2021 Dahmer remand; the Hawkins / Vuleta seat
+conflict; and the 2017-18 publication-date filing convention. `editor-2026-10-07-rally-notice` and
+`editor-2026-10-04-index-drop` are not to be merged and were not touched.
+
+The 189-slot portrait gap did not move. But it is better placed than it has been: thirteen specific
+volumes covering the thickest part of it now have record numbers, article ids and file sizes
+waiting, and the only thing between them and the gap is a route to a Cloudflare-protected PDF.
+`web.archive.org` was reported closed again this run at the TLS layer.
