@@ -73,6 +73,12 @@ Not fetched this run (lower priority by officer-gap size, or already covered): 2
 (Connection), outside this project's 1966-2026 window only by a year and worth a look once the
 recent gap is closed.
 
+The last three rows carry a caveat the others do not: TopSCHOLAR titles them simply "Talisman",
+"Talisman: Forge" and "Talisman: Illuminate", with no year at all. The 2021 and 2022 above are the
+catalogue's own `bepress_citation_date` for those records, not part of the published title. That is
+a sourced year, but it is a cataloguing field rather than the volume's own statement of itself, so
+it carries one less degree of confidence than the rows whose title prints the year.
+
 **One genuine unknown, flagged rather than guessed at:** which academic year each volume actually
 covers. A yearbook titled "2016" could document the 2015-16 year, the 2016-17 year, or (per some
 of the split titles) a single semester — the 1975 convention this file documents elsewhere
