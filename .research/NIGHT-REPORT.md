@@ -1,3 +1,141 @@
+# 18 October 2026 (editor, sixth review) — nothing was open, so the review was turned on what is already live, and four funded plans came back as events
+
+## What was open
+
+Nothing. `gh api repos/.../pulls?state=open` returned an empty list, and no branch on origin
+carries unlanded work: the recent `research-photos` and `research-editor-10*` tips differ from
+`main` in no file under `data/`, and the branches that still show commits ahead are squash-merge
+artifacts whose content is already published. `gh pr list` answered 403 naming GraphQL, as on
+every pass; `gh api` and `git push` both worked and this was a full-mode pass. `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are still unset, so route two remains unavailable and route one was again
+the only way to land anything.
+
+The standing brief still names #6, #7 and #8 as open and stale since 4 August. They have been
+closed unmerged since 18 August 2026, and this is now the twenty-second pass to record it.
+
+An empty queue is not an empty run. Main deploys to the live site on merge, so everything already
+on it is published, and the review is worth as much pointed at that as at a diff. This pass went
+looking for the trap the last three passes kept finding — a plan published as an outcome — and
+found four more of it.
+
+## What the sweep did
+
+The archive holds 224 events whose only sources are bill sheets. A bill can prove what was
+proposed, funded and read; it cannot prove that the thing it funded happened, and a bill read
+before the event it pays for cannot prove it even in the past tense. Those 224 were swept for
+past-tense assertions that an activity took place. Four hits, two of them false positives on
+reading: 1991-92's voter registration booth says "wherever class registration took place", which
+is generic, and 2019-20's Bill 8-20-S says "until a new election was held", which is the bill's
+own provision. A second sweep for fundraising results and a third for advance-notice labels
+crossed with outcome bodies brought the real set to four entries, all in 2023-24.
+
+## What was cut
+
+**The Boys and Girls Club toy drive, 28 November 2023.** The entry had students donating toys at
+the SGA front desk between 13 and 30 November and a wrapping night held on the 30th. Bill 11-23-F
+is its only source; it reads that students *can* donate in that window and that there *will be* a
+wrapping event on 30 November, and its second reading was 28 November — two days before the night
+the entry was reporting. Trimmed to the offer, with a line saying the bill is the only source and
+what the drive collected is not recorded.
+
+**The SGA Spring Fling, 12 March 2024.** "All money raised at the event went to Kids Cancer
+Alliance" is now "was to be donated to". Bill 15-24-S reads "All money raised would be donated";
+the Herald reads "All proceeds from the event will be donated". The Herald also called 27 March
+tentative, which the entry had hardened into a date and now says.
+
+**The Abby Nash Creativity Scholarship, 12 March 2024.** "It gave two students $500 each" is now
+"was to give". The Herald of 12 March reads "will grant", and applications were open until
+29 March 2024, so nobody had been awarded anything when the only source was written. The entry
+now says so.
+
+**Hope Harbor and Denim Day, 12 March 2024.** Titled "SGA joined Hope Harbor for Denim Day" over
+an entry whose two sources are a bill read on 12 March and a Herald report of 13 March, both six
+weeks ahead of the 24 April event. Retitled to the funding, which is what the sources prove. This
+one was rescued rather than only cut: the Herald does report an outcome the entry had left out —
+the bill passed unanimously — and that is now in it, with a line that both sources predate the
+event.
+
+No entry says any of these events failed to happen. No follow-up report of the Spring Fling, the
+Denim Day walk or Mental Health Week was found, and a miss is not evidence of absence.
+
+## What held up
+
+Twenty-three claims were opened and read rather than taken on trust: bills 11-23-F, 14-24-S,
+15-24-S, 16-24-S and 18-24-S from the mirrored PDFs, and the two *Herald* articles behind them.
+
+The densest entry of the March batch, "Two weeks of events funded, and a note on two numbering
+systems", held up in full and is the best-made entry this pass read. Every DEI-week day and
+partner matches the *Herald* exactly: Humane Society dogs and Talley Family Counseling Center
+material on 25 March, the campus-demographics wheel on 26 March, Health Education and Promotion
+with free HIV testing on 27 March, the American Sign Language Organization and SARC on 28 March.
+The Mental Health Week schedule matches, down to the sunset yoga on the South Lawn, the coffee and
+doughnut tabling on 23 and 25 April and the Dog Day on the 26th. Salvador León's $761.29 closing
+balance matches.
+
+Its two hardest judgements are both right. The *Herald* really does number the four bills
+34-23-S, 35-23-S, 36-23-S and 38-23-S where SGA's own sheets head them 14, 15, 16 and 18-24-S,
+and the titles, reading dates and author lists match bill for bill. And where the *Herald*
+reports $650 for Mental Health Week, bill 18-24-S's purpose, resolving clause and itemisation all
+read $620 — $75, $55, $50, $20, $100, $120 and $200, which adds to exactly that. The archive
+follows the document and tells the reader both figures. That is how a discrepancy should be
+handled.
+
+One spelling was settled rather than flagged. Bill 16-24-S prints its author as "Sophia Byrant".
+Bill 18-24-S prints "Sophia Bryant" and carries the address sophia.bryant929@topper.wku.edu, and
+the *Herald* has Bryant twice. The archive's Bryant is right; the typo is the bill sheet's.
+
+## The traps checklist against this diff
+
+The advance-notice trap is what the pass was about, and four entries tripped it. No committee
+chair was promoted to officer: every author title on the five bills matches what `years.json`
+records, including Kayla Distler as a College of Education and Behavioral Sciences senator and
+Cissell, Diaz and Stinnett as students rather than senators. Nobody is matched by surname alone.
+No changed surname, no new person, no change to `name-aliases.json`. No April result moved year:
+all 54 spring-election-shaped events dated in the second calendar year of their academic year were
+checked and all are correctly filed, the event sitting in the year it happened and the winner's
+term filing forward, which is the model working as designed. Nothing touches the settled facts.
+Nothing new was written about a living person — three of the four edits take a claim away and the
+fourth adds a vote tally. No contributor edit was in this diff.
+
+`check_duplicates.py` reports the same four pairs and one same-source pair as the last pass. All
+five are pre-existing, all five are genuinely separate events, and this diff adds no events.
+Nothing was merged.
+
+## Counts after the merge
+
+61 years, 1,964 events, 60 people have been president. 2,651 recorded terms of office held by
+1,809 people, 2,614 of them (98%) carrying an account of what the person did; 48 people recorded
+under more than one spelling or name. 1,111 pieces of legislation, every file present and a real
+PDF. 308 documents. 1,312 citations naming a volume and number, 1,298 also naming a date, each
+matching the issue's own bar the one where the catalogue is wrong. 1,319 quoted spans, none
+reaching 15 words. The search index holds 4,945 records. The portrait gap is unchanged at 189
+slots. `build.py` completed cleanly and `check_data.py`, `check_contrib.py` and
+`check_duplicates.py` all exited 0, before and after the corrections.
+
+## What the routines need to do differently
+
+All four of these entries were written by a routine that had the right sources in front of it and
+read them accurately. What failed was tense. A bill sheet and a meeting report are both written
+*before* the thing they describe, and an entry built from them is a record of a decision, not of
+an event — so the verbs have to stay where the sources are. "Students donated" and "a wrapping
+event was held" are not harder facts than "students could donate" and "a wrapping event was set
+for"; they are the same facts overstated, and overstating them is what puts a claim on the live
+site that no source can defend.
+
+The habit to build is the one the "Two weeks of events funded" entry already shows: when the only
+source predates the event, say so in the entry. That one line is what keeps a later pass from
+having to guess whether the writer checked.
+
+## Still open
+
+Nothing. #828 is merged and no pull request is open.
+
+The housekeeping note stands from the last pass: 88 `research-*` and `editor-*` branches are on
+origin, none carrying unlanded research. This entry is being landed through a pull request and
+merged rather than left on its branch.
+
+---
+
 # 18 October 2026 (editor, scheduled) — #826 merged after four corrections, and a Steve Wilson lead reopened that the routine had written off on a false negative
 
 ## What was open
