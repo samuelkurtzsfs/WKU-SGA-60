@@ -50427,10 +50427,23 @@ main. That test was too narrow in one way and too loose in another, and this pas
 origin carries **465 branches**, not 86, and a three-dot diff is the wrong instrument, because
 these pull requests are squash-merged and the merge base sits behind the squash commit.
 
-Compared by content instead, 17 branches genuinely differ from main in `data/`, `api/` or
-`scripts/`. Every one of the 17 differs in the same direction: **main holds the corrected
-version and the branch holds the wording main has since superseded.** The three cases behind
-them are the corrections already published this month — an appropriation's plan written up as
+Compared by content instead, 462 of the 466 non-main branches differ from main in `data/`,
+`api/` or `scripts/`, and 85 of the 87 `research-*` branches differ in `data/` alone. Those
+figures are what a tip-tree content diff actually returns; an earlier draft of this entry put
+the number at 17, which no reading of the test reproduces, and the figure is withdrawn.
+
+The direction of the difference is the part that matters, and it holds: **main holds the
+corrected version and the branch holds the wording main has since superseded.** Tested on the
+record itself rather than on the file trees, the 466 branches hold 505 event entries, by year,
+date and title, that main does not carry. Narrowing those to the ones with no main entry within
+seven days in the same academic year leaves 35, and all 35 are accounted for in main under a
+corrected academic year, a corrected date, or a revised title. The one entry genuinely dropped
+rather than rewritten is 2003-04's "The Constitutional Convention rebuilds the body", which was
+sourced to the `wku.edu/sga` history page, the kind of later compiled list this project does not
+trust, and which main covers instead with two contemporaneously sourced entries: Congress
+approving the constitution on the fifth attempt on 12 February 2004, and the referendum of
+1 March 2004. The three cases behind the superseded wordings are the corrections already
+published this month — an appropriation's plan written up as
 its outcome, "SGA bought the stoles" cut back to what Bill 13-18-S proves (#810); a count of 78
 applications published as 78 funded organizations (#815); and a secondary citation on the
 Lavender Graduation entry that pointed at a breast-cancer-awareness article (#812). Nothing is
@@ -50457,7 +50470,10 @@ four passes. All five are genuinely separate events and nothing was combined:
 
 ## Checks
 
-`build.py` clean; `check_data.py` exit 0; `check_contrib.py` exit 0; `check_duplicates.py` exit 0.
+`build.py` clean; `check_data.py` exit 0; `check_contrib.py` exit 0. `check_duplicates.py`
+exits 1, not the 0 an earlier draft of this entry claimed: it returns 1 whenever it has any pair
+to report, so 1 is its ordinary signal and not a failure. Reading it as 0 also contradicted the
+five pairs this same entry goes on to list.
 
 61 years, 1,964 events, 60 people have been president. 2,651 recorded terms of office held by
 1,809 people, 2,614 of them (98%) carrying an account of what the person did, and 48 people
