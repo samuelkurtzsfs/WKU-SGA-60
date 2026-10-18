@@ -50403,3 +50403,82 @@ slice of it is now exhausted by name rather than by assumption, with a specific 
 for each of six people, and the reason the gap is shaped the way it is: the Talisman's photo desk
 in these years covered the president, sometimes the activities vice president, and essentially
 never a treasurer, parliamentarian, sergeant-at-arms or judicial council chair.
+
+# 18 October 2026 — scheduled review
+
+A quiet run. Nothing new had been pushed since the seventh review of 17 October, and nothing
+reached the public site from this pass.
+
+## Nothing to review
+
+No pull request is open. The REST API answers normally — `gh pr list` returns 403 because it
+goes through GraphQL, which is closed to these sessions, and `gh api repos/.../pulls` is the
+route that works. A future pass should not read that 403 as the platform gate; the test is the
+REST call.
+
+The three pull requests this routine's brief still names as open and stale, #6 (photographs),
+#7 (the 1980s) and #8 (the 2020s), remain closed and unmerged since 18 August 2026, as the
+seventh review recorded. The brief has now carried that instruction for two months.
+
+## No research is stranded, by a stricter test than last time
+
+The seventh review reported that all 86 `research-*` branches showed an empty data diff against
+main. That test was too narrow in one way and too loose in another, and this pass redid it:
+origin carries **465 branches**, not 86, and a three-dot diff is the wrong instrument, because
+these pull requests are squash-merged and the merge base sits behind the squash commit.
+
+Compared by content instead, 17 branches genuinely differ from main in `data/`, `api/` or
+`scripts/`. Every one of the 17 differs in the same direction: **main holds the corrected
+version and the branch holds the wording main has since superseded.** The three cases behind
+them are the corrections already published this month — an appropriation's plan written up as
+its outcome, "SGA bought the stoles" cut back to what Bill 13-18-S proves (#810); a count of 78
+applications published as 78 funded organizations (#815); and a secondary citation on the
+Lavender Graduation entry that pointed at a breast-cancer-awareness article (#812). Nothing is
+sitting unpublished. The branches are stale, not unlanded.
+
+## Duplicates judged, nothing merged
+
+`check_duplicates.py` reports the same four title pairs and one same-source pair as the previous
+four passes. All five are genuinely separate events and nothing was combined:
+
+- 1991-92 — a bill for a student regent advisory committee introduced, and the same bill failing
+  after amendment nine days later.
+- 1971-72 — the Kentucky Civil Liberties Union planning court action, and Associated Students
+  endorsing the suit a month later.
+- 2003-04 — a position taken against plus/minus grading, and legislation passed three weeks on.
+- 1997-98 — Bill 97-3-F funding designated driver cards in November 1997, and the *Herald*
+  reporting their distribution three and a half months later. The February entry is written down
+  to what a contents listing proves and claims nothing about how the scheme went, which is the
+  right treatment.
+- 2026-27 — three entries share one *Herald* report of the meeting of 22 September, and they
+  carry different business: the bus-tracking resolution, the syllabus mental health statement,
+  and the opening of fall voting. The election entry states openly that the report dates the
+  opening only as "today", so which of the two days it opened is not fixed.
+
+## Checks
+
+`build.py` clean; `check_data.py` exit 0; `check_contrib.py` exit 0; `check_duplicates.py` exit 0.
+
+61 years, 1,964 events, 60 people have been president. 2,651 recorded terms of office held by
+1,809 people, 2,614 of them (98%) carrying an account of what the person did, and 48 people
+recorded under more than one spelling or name. 1,111 pieces of legislation, every file present
+and a real PDF. 1,311 citations naming a volume and number, each opening the issue it names;
+1,297 also naming a date, each matching the issue's own bar the one where the catalogue is wrong.
+1,318 quoted spans, none reaching 15 words.
+
+The build again withheld 5 photographs. This is the barring rule working as intended, not a
+fault: a barred identification keeps its file in `data/photos` so the photograph routine can go
+on reviewing it, and `_do-not-use.json` keeps it off the public site.
+
+## Still open
+
+Everything the earlier passes left open stands, untouched by this one: the Boka spelling, which
+wants the owner's decision; Xavier Spiess's roster entry and its missing source; the Steve Wilson
+portrait; the 2021 Dahmer remand; the Hawkins / Vuleta seat conflict; the publication-date filing
+convention and the 2017-18 pair sitting across two dates; the 26 March 2018 committee-chair
+amendment; the Mark Clark / Divya Gangavelli lead; and the Alistar / Alastair Flowers spelling.
+The 189-slot portrait gap did not move.
+
+The drop box was again unavailable: `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are both absent, as
+on 12 and 17 October. Route one carried this report, so nothing was lost, but the two routes are
+still not independent backups of each other here.
