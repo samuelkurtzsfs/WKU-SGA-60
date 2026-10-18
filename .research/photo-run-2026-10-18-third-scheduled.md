@@ -66,8 +66,13 @@ gap that David Bass's year hadn't already covered:
   page for Mark Chesnut's own entry (234) turned out to be the same intramural-list page, not an
   individual class photo.
 - **Chris Millay** and **Dwight Austin** (Parliamentarian and Sergeant-at-Arms, 1986-87) — neither
-  name appears anywhere in `talisman1986west` or `talisman1987west`, checked both volumes since the
-  academic year could plausibly be covered by either.
+  person appears in `talisman1986west` or `talisman1987west`, checked both volumes since the
+  academic year could plausibly be covered by either. Stated precisely, because the loose version
+  of this sentence is what produces a false negative: both surnames *do* occur in those volumes,
+  and every occurrence is someone else. `Millay` is Beth Ann Millay (a runner, indexed 1986 at
+  132, 185, 346 and 1987 at 240) and Lori Ann Millay (1987, 52); the only `Dwight` in either book
+  is Dwight Scott of Nortonville, indexed 1987 at 329. No `Austin` entry in either index carries
+  the forename Dwight. There is no Chris Millay and no Dwight Austin in either volume's index.
 
 Confirmed in passing that the archive.org page-image route itself still works cleanly
 (`archive.org/download/<item>/page/n<N>.jpg` against the item's own leaf numbering, cross-checked
