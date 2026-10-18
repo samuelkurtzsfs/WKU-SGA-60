@@ -1,3 +1,126 @@
+# 18 October 2026 (editor, seventh review) — a Steve Wilson lead properly run to ground, and a photograph logged against the wrong club
+
+## What was open
+
+One pull request, #830, `research-photos`, reopened after #6 closed unmerged. Three commits, two
+files, both of them research logs in `.research/`: the photograph routine's third and fourth
+scheduled passes of 18 October. Nothing under `data/`, so nothing in it reaches the published site.
+The three branches my standing brief still names as stale — #6, #7 and #8, open since 4 August —
+are all closed, and have been for some time. That line in the brief has gone out of date and can
+go.
+
+## What was read at source
+
+I opened the 1978 and 1979 *Talisman* on archive.org rather than taking the logs' word for them,
+and sampled fourteen claims across the diff.
+
+The Steve Wilson work holds in full, and it is good work. An earlier pass had ruled him out on a
+body-text search; the pass before this one caught that the volume's own index carried
+`Wilson, Steve Alan 296, 318, 320, 336` and reopened the lead rather than letting a false negative
+stand; this pass read all four pages and closed it properly. The index entry is verbatim. The Greek
+Week material is as quoted. The word `judicial` does not occur anywhere in `talisman1979west`, so
+the conclusion that the yearbook never photographed that office in 1978-79 is sound rather than
+merely unproven.
+
+The Sigma Alpha Epsilon composite on p. 337 deserves its own note, because I doubted it and was
+wrong. Its caption is set in two columns and the OCR interleaves them line by line, so the raw text
+reads as though the front row ran "D. Pelino, C. Henry, C. Callis..." and the log's transcription
+looked invented. I pulled the leaf image to settle it. Read as the two columns it is, the caption
+says exactly what the log says it says: S. Wilson last in the front row, S. Thornton third in the
+third row, five rows of some forty men in front of the house, not one of them individually
+identified. Declining it was right, and the log's claim to have pulled the page image was true.
+The lesson is mine, not the routine's: on a two-column caption the OCR is not evidence against a
+transcription, and the image settles it in one request.
+
+The rest of the sample: the 1978 Bass caption verbatim, `Bass, David Eugene 34` his only index
+entry, all four people it names matching the 1977-78 executive in `years.json`; Vern Pulman absent
+from `talisman1975west`; `Wicks, Alice Elizabeth` indexed with no page number at all;
+`Young, David Paul 289` a single entry. Every office the logs attribute matches `years.json`
+exactly, including the Roadcap correction that puts Legislative Research in 1996-97 with Andy
+Gailor and not with him. No committee chair is written up as an officer, and nobody is matched by
+surname alone — the logs decline surname inference twice where it would have been easy. The gap
+arithmetic is right: 189 slots, 159 people, 157 with no portrait anywhere, and all 73 leader
+records across 61 years still carry a portrait. The network state is as reported, `viewcontent.cgi`
+answering 403 behind a Cloudflare challenge and `web.archive.org` resetting the connection.
+
+## One claim that did not survive
+
+**Page 296 of the 1979 volume is the Pre-Law Club photograph, not the Young Democrats one.** The
+third pass had the club right and the fourth pass changed it to the wrong one. The caption reads
+`PRE-LAW CLUB: (Front row) M. Mefford, K. Pawley. (Back row) J. Rue, S. Wilson.`, and the index
+puts Mefford, Pawley and Rue on that page with him.
+
+This is not a typo worth passing over. Page 296 carries a Young Democrats write-up as body text
+*and* a separate `YOUNG DEMOCRATS:` group photograph, and that photograph's caption names B. Moore
+and B. Shockley — the 1977-78 president and activities vice president. A later run sent to "the
+Young Democrats photograph on p. 296" looking for Steve Wilson would arrive at a frame he is not
+in, holding two other ASG officers' initials and no caption-level identification of either. That is
+the exact shape of a misattributed portrait, arriving through a research log rather than through
+the data. Corrected on the branch before merge, with the reason recorded so the next pass can see
+why it matters.
+
+The cause is worth naming because it will recur: the club was read off the prose above the
+photograph instead of the capitalised label governing the name list. On a *Talisman* page, body
+text about one organisation and a captioned photograph of another routinely share a page, and the
+OCR interleaves the two. Identify a photograph from its caption label, never from the surrounding
+prose.
+
+I also tightened the third pass's Millay and Austin negative. It was written as neither name
+appearing anywhere in the 1986 or 1987 volumes. Both surnames do appear — Beth Ann Millay, Lori Ann
+Millay, and a Dwight Scott — and every bearer is someone else. The finding is sound and stands; the
+sentence stating it was broader than what had been checked, which is the same sentence shape that
+cost this project the Wilson lead in the first place.
+
+## Merged
+
+#830, as a merge commit, after those two corrections were pushed to the branch. Build and
+validators clean, every other sampled claim good at source, no trap tripped. Nothing under `data/`
+changed, and after merging `main` in, `build.py` rewrote no file under `site/` — this one published
+nothing, which is the right outcome for a pass that found no portrait and said so carefully.
+
+## Judgements left standing
+
+The duplicate pairs are the same five, judged the same way: the designated-driver cards of November
+1997 and their distribution the following February, the student regent advisory committee bill
+introduced in January 1992 and failing in February, the Civil Liberties Union suit planned in
+February 1972 and endorsed in March, the plus/minus grading stand of September 2003 and the
+legislation three weeks later, and 2026-27's syllabus statement and election opening. This branch
+adds no events, so it introduces no new pairs.
+
+## Checks
+
+`build.py` exit 0; `check_data.py` exit 0; `check_contrib.py` exit 0; `check_duplicates.py` exit 1,
+its ordinary signal that it has pairs to judge.
+
+61 years, 1,964 events — unchanged, nothing added or removed. 60 people have been president. 2,651
+recorded terms of office held by 1,809 people, 2,614 of them (98%) carrying an account, 48 people
+under more than one spelling. 308 documents, 1,111 pieces of legislation, every file a real PDF.
+1,312 volume-and-number citations, 1,298 also dated. 1,319 quoted spans, none reaching 15 words.
+4,945 search records. The build withheld 5 photographs and left out the 2 barred identifications.
+
+## Still open
+
+The standing list is unchanged and none of it was touched: the Boka spelling, which wants the
+owner's decision; the 2021 Dahmer remand; the publication-date filing convention and the 2017-18
+pair across two dates; the 26 March 2018 committee-chair amendment; the Mark Clark / Divya
+Gangavelli lead; and the Alistar / Alastair Flowers spelling. The Steve Wilson portrait comes off
+that list: it is now closed rather than open, on four pages read. The 189-slot officer portrait gap
+did not move, and both routes that would reach most of it remain shut.
+
+Three notes carry over for the owner and are worth repeating rather than leaving to go stale. Every
+year page still stamps today's date as "revised" in its preferred citation whether or not that year
+changed. `check_data.py` still validates `photos.json` without consulting the bar list, so the bar
+depends on the build getting it right rather than being self-enforcing. And yesterday's proposal
+still stands: a check that lists events citing a bill sheet whose Pass line is empty while the
+entry speaks in a finished tense would put that question in front of an editor instead of leaving
+it to a random sample.
+
+One note of my own. Nothing in the validators reads `.research/`, which is correct — it is working
+notes, not published archive. But this pass is the second day running where the defect worth
+catching was in a research log rather than in the data: a log is what tells the next run which
+leads are closed, and a wrong one closes a good lead or opens a bad one. The logs are earning the
+same read as the data, and they are getting it.
+
 # 18 October 2026 (editor, sixth review) — nothing was open, so the review was turned on what is already live, and four funded plans came back as events
 
 ## What was open
