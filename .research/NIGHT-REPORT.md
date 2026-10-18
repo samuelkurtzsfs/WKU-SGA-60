@@ -50290,3 +50290,116 @@ same gap against the same closed doors is not the best use of a run. That judgem
 
 The duplicated 24 and 25 August headings in this file are still here. It is an internal log, nothing
 renders from it, and it was not touched again.
+
+# 17 October 2026 (editor, seventh scheduled review) — one PR merged, eight Talisman claims opened at source, and three stale PRs that are not open any more
+
+## What was in the queue
+
+One open pull request, #816, "Research: photographs, 17 October third scheduled pass." Merged, as
+is, nothing cut.
+
+Its whole diff is a single file, `.research/photo-run-2026-10-17-third-scheduled.md`, 102 lines of
+run log. It changes no published data: the diff against main excluding `site/` is that file and
+nothing else. `.research/` is excluded from the Vercel deploy by `vercel.json` and no run log is
+copied into `site/`, so nothing in it reaches a reader. The publishing risk on this merge was nil,
+which is worth recording because it is the reason a log quoting a 25-word Talisman caption is not a
+breach of the 15-word rule — that rule governs the published record, and `check_data.py` confirms
+the published record holds 1,318 quoted spans with none reaching 15 words.
+
+## The spot check: eight claims, every one opened at source
+
+The log is a negative result, which is the kind of entry it is easiest to wave through and hardest
+to trust. So every substantive claim in it was checked against the volume's own full text on
+archive.org, by pulling each item's full-text index rather than taking the log's word for a page
+number. All eight held.
+
+The 1977-78 caption on p. 34 reads exactly as quoted: a light moment in an ASG meeting bringing
+laughter from president Bob Moore and smiles from activities vice president David Bass, secretary
+Sharon May and vice president Cathy Murphy. Four names against four figures and **no left/right or
+row marker anywhere in it.** The run declined to take a portrait for Bass out of that frame, which
+is the correct call under the rule that a face you cannot confirm is worse than no face.
+
+"Pulman" returns zero matches anywhere in the 1975 volume. `Wicks, Alice Elizabeth` sits in the
+1979 index with no page number against it at all. The David Young line is on leaf 291, printed
+p. 289, naming him administrative vice president in the words the log quotes. The two Wilson index
+entries are as described, `Wilson, Stephen Alan` with no page number and `Wilson, Steve Alan` at
+296, 318, 320 and 336. Leaf 238 of the 1981 volume, printed p. 234, carries `Mark Chestnut (Sigma
+Alpha Epsilon)` in an intramural champions list with the *t* and no photograph attached; the
+volume's only `Chesnut` is a William G. Chesnut of Berea, a different man. In the 1987 volume
+"Millay" returns only Lori Millay, an interior-design graduate, and Beth Millay of the track squad,
+and "Dwight" returns only a Dwight Scott of Nortonville.
+
+`portrait_gap.py` reproduces the log's headline numbers to the digit — 189 slots, 159 people, 157
+with no portrait in any year — and `photos.json` confirms the rest: Todd, Dawson, Johnson and
+Gilley all carry a portrait, all ten names the log says were already mined from the 1977-78 spread
+are in the file, and Bass, Chesnut, Millay and Austin are all correctly absent from it.
+
+## Traps
+
+Nothing tripped. No events were added, so advance notices and the April filing rule do not arise,
+and nothing touches section 7 — the log cites the LaCivita settled note consistently with it. The
+run's real value is the two traps it refused to walk into, both trap 4: it would not read the
+intramural "Chestnut" onto the ASG treasurer, and it would not resolve the two Wilson index entries
+into one person. Either shortcut would have put a wrong face on a page, which is the failure this
+project can least afford.
+
+## One imprecision, recorded not fixed
+
+The log calls the p. 282 ASG group photograph "the source for 30 of this year's leaders." 1980-81
+holds 32 leader entries, 24 of them citing p. 282 as either the frame or the index tie. The
+substantive claim is sound and Chesnut is genuinely absent, so this is not grounds to hold a merge,
+but a run quoting a count of the archive's own file should take it from the file. A later pass may
+lean on that 30.
+
+## A stale premise in this routine's brief, corrected
+
+This routine's standing brief names pull requests #6 (photographs), #7 (the 1980s) and #8 (the
+2020s) as open since 4 August and in need of rescue or closing. **All three were closed on 18
+August 2026** and none was merged. There is nothing to rescue and nothing to close. The brief has
+been carrying that instruction for two months; a future pass should not spend a run looking for
+them.
+
+Separately, the drop box was unavailable again this run — `SGA60_SITE` and `SGA60_RESEARCH_TOKEN`
+are both absent from the environment, as they were on 12 October. Route one carried everything, so
+nothing was lost, but the two routes are still not independent backups of each other here.
+
+## No research is stranded
+
+Every `research-*` branch on origin was checked for work that never landed. All 86 of them show an
+empty data diff against main once `site/` and `.research/` are excluded, including the five the
+fifth review flagged as unmergeable. Whatever those branches still carry ahead of main is build
+output and run logs, not findings. Nothing is sitting unpublished.
+
+## Checks
+
+`build.py` clean; `check_data.py` exit 0; `check_contrib.py` exit 0. Counts: 61 years, 1,964 events,
+60 presidents, 2,651 recorded terms of office held by 1,809 people with 98% carrying an account of
+what the person did, 1,111 pieces of legislation each a real PDF, 1,311 volume-and-number citations
+each opening the issue it names, 1,318 quoted spans none reaching 15 words, 48 people recorded
+under more than one spelling. The build again withdrew 5 photographs the archive no longer holds or
+has barred, as it has on previous passes.
+
+`check_duplicates.py` exit 0, reporting the same four title pairs and one same-source pair as the
+last four passes, all pre-existing on main and none introduced by this diff. Judged all five as
+genuinely separate events and merged nothing: the 1991-92 pair is a bill introduced and the same
+bill failing after amendment nine days later; the 1971-72 pair is the KCLU planning action and
+Associated Students endorsing it a month on; the 2003-04 pair is a position taken and legislation
+passed three weeks later; the 1997-98 driver-card pair stands three and a half months apart; and
+the 2026-27 pair shares one article but reports different business, the syllabus statement and the
+opening of fall voting.
+
+## Still open
+
+Everything the earlier passes left open stands, unchanged by this one: the Boka spelling, which
+wants the owner's decision; Xavier Spiess's roster entry and its missing source; the Steve Wilson
+portrait, on which this pass adds that the 1979 volume holds no identifiable photograph of him and
+the pages its index does give him are a Marketing Club spread; the 2021 Dahmer remand; the Hawkins
+/ Vuleta seat conflict; the publication-date filing convention and the 2017-18 pair sitting across
+two dates; the 26 March 2018 committee-chair amendment; the Mark Clark / Divya Gangavelli lead; and
+the Alistar / Alastair Flowers spelling flagged on the sixth pass.
+
+The 189-slot portrait gap did not move. What this pass adds to the record is that the archive.org
+slice of it is now exhausted by name rather than by assumption, with a specific dead end on file
+for each of six people, and the reason the gap is shaped the way it is: the Talisman's photo desk
+in these years covered the president, sometimes the activities vice president, and essentially
+never a treasurer, parliamentarian, sergeant-at-arms or judicial council chair.
