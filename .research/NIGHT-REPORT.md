@@ -50715,3 +50715,128 @@ both read at source this pass.
 The brief this routine runs from still describes #6, #7 and #8 as open and stale. They have been
 closed since 18 August 2026. The drop box was unavailable again, `SGA60_SITE` and
 `SGA60_RESEARCH_TOKEN` both absent, but push access was open and carried this report.
+
+# 18 October 2026 — fourth scheduled review
+
+One research pull request open, #822, the second photograph pass of the day. Merged. Then a defect
+of the site's own, found while checking that pull request's central claim and fixed in #823, also
+merged. The three pull requests this routine's brief still calls open and stale — #6, #7 and #8 —
+have been closed since 18 August, and the brief has now been wrong about them for two months.
+
+## #822, photographs — merged as is, nothing cut
+
+The diff was one file, an 80-line research log, and no data at all: no event, no officer, no name,
+no portrait. That makes it a pass with nothing to trip the traps checklist, but it does not make it
+unverifiable, because a negative result that is wrong is worse than no result — it tells the next
+run a route is spent when it is not.
+
+So the log's claims were checked rather than taken. Sixteen of them, and every one held. The counts
+are exact: 61 years, 73 president and student regent records, none without a portrait, no year
+without a photograph, and `portrait_gap.py` reporting 189 officer slots held by 159 people, 157 of
+them with no portrait anywhere — the log's figures digit for digit. The eight names it checked
+against `photos.json` all carry a portrait under exactly the filenames it names, and every one of
+those files is on disk.
+
+The live source held too. `wku.edu/sga/executive/index.php` returns 200 and links exactly the five
+headshots claimed, each name and title printed beside its own image in the page's own markup. The
+folder really is named `2025_2026_executive` while the page content reads 2026-2027, so the log's
+caveat about WKU reusing a directory name across an officer rotation is accurate and is worth
+having on the record. Every one of the past-year folders 404s in both spellings, the bare folder
+403s with directory listing disabled, and the live judicial-council page 404s. The two standing
+blocked routes are still blocked — `viewcontent.cgi` serves Cloudflare's interstitial, and
+`web.archive.org` fails outright — while `archive.org`'s item host answers 200.
+
+The run deserves credit for the one place it could have gone wrong and did not: it matched all
+eight names on the full name, never the surname, and it treated a live front door onto an
+already-mined source as spent rather than new. That is the second pass this week to close a route
+instead of leaving it to be re-walked, and closing one is worth more than a thin entry.
+
+## A barred portrait the site was still serving
+
+Checking the log's "zero gaps" claim turned up something it had not claimed and could not have
+seen. The claim is true of `photos.json`. It was not true of the published site.
+
+Two identifications barred in `photo-finds/_do-not-use.json` were still cited in `photos.json`:
+John Evans 1976-77, barred because the face is unplaced within a senior portrait grid, and Ann
+Blair Thornton 2008-09, barred because it is a second crop of a frame the archive already
+publishes under 2009-10. The build applied the bar only at the step that copies photographs into
+the site. That withheld both files, which is right, but by then the citations had already been
+merged onto the years, so they survived into the rendered output with nothing behind them.
+`site/network.html` carried Thornton's filename and asked a reader's browser for a portrait the
+same build run had just refused to publish.
+
+`check_data.py` passes over this because it validates `photos.json` without consulting the bar
+list. That is exactly the gap `build.py`'s own comment at the withdrawal step warns about, between
+`data/photos` and `photos.json`, left standing in the one direction the comment did not follow.
+
+Fixed in #823 by reading the bar list once into a helper and applying it in `apply_photo_overlay`,
+which is where `photos.json` becomes part of the years and the single point every renderer draws
+from. A barred file is now kept out of the year pages, the network graph, the roster and the search
+index together instead of one at a time; the copy step keeps its own check as a backstop and shares
+the helper. The defect was reproduced on `main` first and the fix shown to close it: the reference
+is gone, and a sweep of every built page against the contents of `site/photos` now finds no
+reference to a photograph file the site does not have, down from one.
+
+Both entries stay in `photos.json` and both files stay on disk, which is what the bars ask for —
+the photograph routine goes on reviewing them and the reasoning stays where a later pass can act on
+it. Neither person loses a face. Evans keeps the 1975-76 crop from the Young Democrats group
+photograph, whose printed caption places him fifth and last; Thornton keeps the 2009-10 crop of the
+same Herald frame.
+
+## A correction of my own
+
+My review comment on #822 reported `check_duplicates.py` exit 0. It exits 1, by design, whenever it
+has pairs to judge — I had read the exit code of a `tail` in the pipeline rather than the script's
+own. Corrected on the thread, because a later run reading that comment could take a by-design 1 for
+a new failure. It changes nothing about the merge: the criteria ask for exit 0 from `check_data.py`
+and `check_contrib.py`, both of which gave it, and all five pairs were judged on their merits.
+Yesterday's report had this right where I did not.
+
+## Judgements left standing
+
+All five duplicate pairs are the same ones the last several passes saw, and all five are separate
+events again. The 1997-98 designated-driver cluster is three entries, not one written three times:
+Bill 97-3-F passing on 4 November with a mark on its Pass line, the Herald's report nine days
+later, and the distribution announcement the following February. The two built on contents listings
+say outright that the listing gives nothing beyond the headline, which is the advance-notice rule
+working rather than breached. The others are a bill introduced and the same bill failing after
+amendment; the Civil Liberties Union planning a suit and Associated Students endorsing it a month
+later; a position taken against plus/minus grading and legislation passed on it three weeks after;
+and two items of business from one meeting write-up.
+
+## Checks
+
+`build.py` exit 0; `check_data.py` exit 0; `check_contrib.py` exit 0; `check_duplicates.py` exit 1,
+its ordinary signal that it has pairs to judge.
+
+61 years, 1,964 events, 60 people have been president. 2,651 recorded terms of office held by 1,809
+people, 2,614 of them (98%) carrying an account of what the person did, 48 people recorded under
+more than one spelling or name. 1,111 pieces of legislation, every file a real PDF. 1,312
+volume-and-number citations, each opening the issue it names, 1,298 of them also dated. 1,319
+quoted spans, none reaching 15 words. The build withheld 5 photographs and, new this pass, reports
+the 2 barred identifications it leaves out of the record.
+
+## Still open
+
+Nothing is awaiting review: no research pull request is open at the end of this pass.
+
+The standing list is unchanged, none of it touched by this pass: the Boka spelling, which wants the
+owner's decision; the Steve Wilson portrait; the 2021 Dahmer remand; the publication-date filing
+convention and the 2017-18 pair across two dates; the 26 March 2018 committee-chair amendment; the
+Mark Clark / Divya Gangavelli lead; and the Alistar / Alastair Flowers spelling. The 189-slot
+portrait gap did not move, and the two blocked routes that would move it are still blocked.
+
+Yesterday's note to the owner stands and is worth repeating, because it is the kind of thing that
+goes stale unread: every year page stamps today's date as "revised" in its preferred citation,
+whether or not that year changed, so a reader citing 1966-67 as revised today is citing a page that
+has not moved in weeks. It is a one-line change to stamp the year's own last modification instead,
+but it rewrites every published citation string, so it is the owner's call.
+
+One more for the owner, from this pass. `check_data.py` validates `photos.json` against the years
+but not against the bar list, which is how a barred portrait reached the site. #823 closes the hole
+in the build, so nothing is being published wrongly now, but the validator still would not catch a
+new citation of a barred file. Adding that check is small and would make the bar self-enforcing
+rather than dependent on the build getting it right.
+
+The drop box was unavailable again, `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` both absent, but push
+access was open and carried both merges and this report.
