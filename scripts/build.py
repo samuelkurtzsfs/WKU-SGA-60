@@ -41,6 +41,24 @@ MONTHS = ("January", "February", "March", "April", "May", "June",
           "July", "August", "September", "October", "November", "December")
 
 
+def barred_files():
+    """The filenames in _do-not-use.json, which must not reach the site.
+
+    The bar list doubles as a notebook: most of its `file` fields are prose or a
+    source URL describing a frame that was never downloaded, and only some are
+    real filenames. Those read as names matching nothing, which is harmless.
+    Returns an empty set if the file is missing or will not parse, so a damaged
+    notebook costs the build nothing rather than everything.
+    """
+    if not BARRED.is_file():
+        return set()
+    try:
+        return {(e or {}).get("file") for e in json.loads(BARRED.read_text())} - {None}
+    except (ValueError, OSError) as exc:
+        print(f"  could not read {BARRED.name}, barring nothing from it: {exc}")
+        return set()
+
+
 def h(s):
     return html_mod.escape(str(s), quote=True)
 
@@ -7882,7 +7900,20 @@ def apply_photo_overlay(ys):
         return
     overlay = json.loads(overlay_path.read_text())
     by_id = {y["id"]: y for y in ys}
+    # A barred identification keeps its file on disk so the photograph routine
+    # can go on reviewing it, but it must not be published, and the copy step in
+    # main() only withholds the file. Two barred portraits were still cited in
+    # photos.json on 18 October 2026 - John Evans 1976-77 and Ann Blair Thornton
+    # 2008-09 - and the Thornton filename reached site/network.html, which
+    # served a portrait whose file the same build had just withheld. Dropping
+    # the entries here keeps a barred file out of every renderer at once
+    # instead of one renderer at a time.
+    barred = barred_files()
+    nbarred = 0
     for p in overlay.get("leaders", []):
+        if p.get("file") in barred:
+            nbarred += 1
+            continue
         y = by_id.get(p["year"])
         if not y:
             continue
@@ -7913,10 +7944,15 @@ def apply_photo_overlay(ys):
             if c.get("chair") == p["name"]:
                 c["chair_photo"] = photo
     for p in overlay.get("years", []):
+        if p.get("file") in barred:
+            nbarred += 1
+            continue
         y = by_id.get(p["year"])
         if y:
             y.setdefault("photos", []).append(
                 {"file": p["file"], "caption": p.get("caption", ""), "src": p.get("src")})
+    if nbarred:
+        print(f"  left {nbarred} barred identification(s) out of the record")
 
 
 # ------------------------------------------------- in their own words
@@ -8363,17 +8399,8 @@ def main():
     # at a public address after the metadata was cut. Anything named in
     # _do-not-use.json is therefore kept out of the site as well. Candidates
     # that are merely held, and not barred, are untouched.
-    barred = set()
-    if BARRED.is_file():
-        try:
-            held = {f.name for f in PHOTOS.iterdir() if f.is_file()} if PHOTOS.is_dir() else set()
-            for e in json.loads(BARRED.read_text()):
-                name = (e or {}).get("file")
-                if name in held:
-                    barred.add(name)
-        except (ValueError, OSError) as exc:
-            print(f"  could not read {BARRED.name}, publishing nothing from it: {exc}")
-            barred = set()
+    held = {f.name for f in PHOTOS.iterdir() if f.is_file()} if PHOTOS.is_dir() else set()
+    barred = barred_files() & held
 
     nstale = 0
     if PHOTOS.is_dir():
