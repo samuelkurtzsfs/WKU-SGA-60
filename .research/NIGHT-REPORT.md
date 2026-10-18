@@ -50498,3 +50498,102 @@ The 189-slot portrait gap did not move.
 The drop box was again unavailable: `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are both absent, as
 on 12 and 17 October. Route one carried this report, so nothing was lost, but the two routes are
 still not independent backups of each other here.
+
+# 18 October 2026 — second scheduled review
+
+Two pull requests open, both reviewed and both merged. Neither touched the record: #818 added
+the 18 October night-report entry, #819 the photograph run's note for the same day. No `data/`,
+`api/`, `scripts/` or `site/` change reached main from either, so nothing in the published
+history moved today.
+
+## #819, photographs — merged as is
+
+Every claim sampled held against its source, and nothing wanted cutting or trimming.
+
+The run's one substantive finding is a negative one, and it verifies exactly: archive.org holds
+19 Talisman "west" volumes and no more — 1943, 1946, 1947, 1963 to 1965, an unbroken 1971 to
+1981, then 1986 and 1987. Re-run here independently against the unpaginated scrape endpoint,
+the count, the identifiers and the claim of no gap inside 1971-1981 all match. That closes the
+false lead that 1974, 1976 and 1978 might be newly available before it could cost a later run a
+session. The gap figures check exactly as well: 189 officer slots with no portrait, 159 people,
+157 of them with no portrait in any year; and all 73 leader records across 61 years carry a
+portrait, with no year left without a photograph.
+
+The four network states were retested rather than assumed, and all four match: `viewcontent.cgi`
+answers 403 with the Cloudflare challenge body, `web.archive.org` fails at the connection layer,
+`archive.org` and `wkuherald.com` answer 200. The digitalcommons landing page answers 301 to its
+canonical URL rather than the bare 200 reported, which changes nothing.
+
+On the trap that matters most for an officer sweep, the run stayed clean: all six sampled names
+match the file, and Morgan Wysong is described as Public Relations Committee Chair rather than
+promoted to an officer. Every name was searched in full, none by surname.
+
+## #818, the night report — merged after two corrections
+
+The entry's reasoning was sound and its conclusions hold, but two figures in it were wrong, and
+both were figures nothing in that run had checked. They were corrected on the branch rather than
+cut, because the argument around them survives.
+
+**The duplicate check does not exit 0.** It ends `return 1 if (pairs or sourced) else 0`, so it
+returns 1 whenever it has a pair to report: 1 is its ordinary signal, not a failure. Read as 0
+the claim also contradicted the five pairs the same entry goes on to list. The identical error
+is already published in the 17 October seventh-review entry, so this is a slip being copied
+forward rather than a one-off.
+
+**The claim that 17 branches differ from main in `data/`, `api/` or `scripts/` is not
+reproducible.** A tip-tree content diff returns 462 of 466; among `research-*` branches, 85 of
+87 differ in `data/` alone. No subset or reading of the test reproduces 17. The figure is
+withdrawn.
+
+What that entry was reaching for, though — that nothing is sitting unpublished — is true, and it
+now rests on a test of the record instead of of the file trees. Across the 466 non-main branches
+there are 505 event entries, by year, date and title, that main does not carry. Narrowed to
+those with no main entry within seven days in the same academic year, 35 remain, and all 35 are
+accounted for in main under a corrected academic year, a corrected date or a revised title, most
+of them the April-elects-forward refiling. One entry was genuinely dropped rather than
+rewritten: 2003-04's "The Constitutional Convention rebuilds the body", sourced to the
+`wku.edu/sga` history page, which main covers instead with two contemporaneously sourced
+entries — Congress approving the constitution on the fifth attempt on 12 February 2004, and the
+referendum of 1 March 2004. Dropping a later compiled list in favour of two contemporaneous
+reports was right. No research is rotting on a branch.
+
+The entry's other checkable claims all held: every build and validator figure exactly, the four
+title pairs and one same-source pair, each of the five duplicate judgements, #6, #7 and #8 closed
+and unmerged since 18 August 2026, and #810, #812 and #815 merged with the subjects given them.
+The 1997-98 pair is the advance-notice trap handled properly — the February entry says the cards
+would be distributed the next day and states outright that the archive holds only a contents
+listing. Its "465 branches" now reads 467, which is drift since it was written, not an error.
+
+## The lesson worth carrying
+
+A count in a report is a claim like any other, and both failures today were counts sitting beside
+conclusions that were sound. The exit-code one had been reproduced from the previous entry
+without being re-run. Where a figure carries an argument, re-derive it in the run that publishes
+it, and state the test precisely enough that the next pass can repeat it.
+
+## Checks
+
+`build.py` clean; `check_data.py` exit 0; `check_contrib.py` exit 0; `check_duplicates.py`
+exits 1, its ordinary signal that it has pairs to judge, reporting the same four title pairs and
+one same-source pair as the previous passes, all judged separate events again.
+
+61 years, 1,964 events, 60 people have been president. 2,651 recorded terms of office held by
+1,809 people, 2,614 of them (98%) carrying an account of what the person did, 48 people recorded
+under more than one spelling or name. 1,111 pieces of legislation, every file a real PDF. 1,311
+volume-and-number citations, each opening the issue it names; 1,297 also dated. 1,318 quoted
+spans, none reaching 15 words. The build again withheld 5 photographs, which is the barring rule
+working as intended.
+
+## Still open
+
+Untouched by this pass: the Boka spelling, which wants the owner's decision; Xavier Spiess's
+roster entry and its missing source; the Steve Wilson portrait; the 2021 Dahmer remand; the
+Hawkins / Vuleta seat conflict; the publication-date filing convention and the 2017-18 pair
+across two dates; the 26 March 2018 committee-chair amendment; the Mark Clark / Divya Gangavelli
+lead; and the Alistar / Alastair Flowers spelling. The 189-slot portrait gap did not move.
+
+One standing item for the owner: the brief this routine runs from still names #6, #7 and #8 as
+open and stale and in need of rescue or closing. All three have been closed and unmerged since
+18 August 2026, and each pass spends part of its run rediscovering that. The drop box was
+unavailable again — `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` both absent — but push access was
+open, so nothing was lost.
