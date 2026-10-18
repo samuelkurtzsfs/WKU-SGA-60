@@ -50840,3 +50840,141 @@ rather than dependent on the build getting it right.
 
 The drop box was unavailable again, `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` both absent, but push
 access was open and carried both merges and this report.
+
+# 18 October 2026 (editor, fifth scheduled review) — an empty queue, and six appropriations published as though they had carried
+
+No research pull request was open at any point in this pass. The three stale branches the standing
+brief names — #6, #7 and #8 from 4 August — have not been open for weeks; numbering is past #824,
+and every `research-*` branch that still reports commits "ahead" of main does so because the
+repository squash-merges, not because it holds work. `research-photos`, the one routine pushing
+daily, is fully contained in main as of #822. So there was nothing to merge, and the pass went to
+the published record instead.
+
+## What was read at source
+
+Ten claims drawn at random from the 492 events citing SGA's own collection, a seam earlier passes
+had sampled less than the *Herald* and the *Talisman*. Eight held exactly. Two did not, and chasing
+the shape of those two through the rest of the archive turned up four more of the same kind.
+
+The eight that held are worth naming, because they are the control for what follows. Bill 6-17-S,
+the "Love Has No Borders" event after the 2017 entry restrictions, matches its sheet down to the
+twenty-two affected students and the $100-plus-$100-plus-$138 split. Bill 19-16-F's extended
+library hours carry `Pass: YES`, on the same line as the label in a layout render, so the alignment
+is real and not the 2000s template's label-and-value drift. Resolution 90-2-S, the 28 February 1995
+minutes, Resolution 82-8-S and the Jamie Fite housing letter each match the catalogue's own
+description of them. Resolution 1-26-S matches its text.
+
+The tenth is the useful one. Bill 99-19-S, the 1999 co-ed volleyball tournament, reads `Pass 'I-
+1.-'1")` in the text layer — OCR noise off a scan. Rendered, the line is `Pass 4-6-99` in blue ink,
+with Fail and Other left as empty dashes. The bill carried on 6 April 1999 and the entry's
+"allocated" is correct. That is the handwritten mark section 6 warns about, caught in the direction
+that confirms an entry rather than the direction that cuts one.
+
+## Six entries that stated an outcome their only source does not record
+
+Every event in the archive whose source is a wku.edu bill sheet — 73 of them — was checked for a
+title asserting an outcome. Sixteen did. Seven of those sheets record a pass and the entries stand:
+25-4-0 on the Miss World Fest pageant, 30-0 on the Power UP forum, `Pass: Yes` on legal observer
+training, `Pass: Y` on Greeks Go Green, 37-0 on Safety Awareness Week, and 13-22-S's `Other` line,
+which reads the initial 31-0 vote and the veto on the same day — exactly as the entry had it.
+
+Six did not, and each has been trimmed back to what its sheet proves. The pattern is the one the
+Lavender Graduation stoles entry was corrected for earlier this month: a bill's plan written up as
+its result.
+
+- **1,200 dollars and a mechanical bull, 26 October 2021.** Bill 8-21-F, first reading 10-26-21,
+  every other line blank on the rendered page. The entry was titled "SGA put $1,200 and a
+  mechanical bull into Homecoming". Nothing records that it carried or that the bull appeared.
+- **Earth Day tie-dye, 12 April 2022.** Bill 41-22-S, first reading only. The entry said the
+  tie-dye "returned after two years without a celebration". The two years without a celebration is
+  the bill's own clause and is kept, attributed; the return is not in evidence.
+- **Hilltopper Hunt, 2021-22.** Bill 36-22-S is blank throughout — no first reading, no second, no
+  outcome. The entry was titled "Hilltopper Hunt raised money for a veterans' food charity" and was
+  filed at 12 April 2022, **a date its only source does not give**. It now sits at 2022-04-01, and
+  the body says plainly that the sheet is undated and brackets the bill between 21-22-S read on
+  22 March and 41-22-S read on 12 April, which is as far as the numbering honestly goes.
+- **WKU Unplugged, 28 March 2024.** The worst of the six. The entry read "WKU Unplugged paid three
+  students to give up their smartphones" and described students surrendering phones and a
+  scholarship awarded, all in the past tense. Bill 34-24-S is prospective throughout — students
+  "will be selected", the scholarship "would be granted" — its Pass line is blank, and its
+  application deadline of 29 March 2024 fell **the day after** the second reading. The archive was
+  reporting as finished a programme whose applications had not yet closed.
+- **Holi Festival, 20 March 2018.** Bill 14-18-S. The $900 is sound — $450 from senate discretionary
+  matched by $450 from executive, both in the bill. But the body had the money paying for colours,
+  tables and chairs and the SGA logo appearing on the promotional material, where the bill says
+  "will purchase" and "will appear", over a blank Pass line.
+- **The seventh standing committee, 22 March 2022.** The lightest touch of the six. Bill 21-22-S's
+  outcome lines are blank, so 22 March is a second reading and not the day the committee was
+  created. The committee plainly exists — the current constitution still lists Community Relations
+  last among seven — so the entry keeps that corroboration and loses only the claim that a
+  particular day made it.
+
+Nothing was deleted. All six were rescued into the archive's own established voice: "proposed
+allocating", "the bill records", and an explicit sentence naming the blank Pass, Fail and Other
+lines. The 2019-20 entries show that voice was already house style — "Bill 5-20-S proposed
+allocating", "Bill 9-20-S proposed donating" — which is why the six stood out once the sheets were
+opened rather than trusted.
+
+A rescue was attempted for all three 2021-22 events before any was trimmed. The full *Herald*
+index holds nothing, which proves nothing for years it does not cover; wkuherald.com's search
+returns 403, the block an earlier pass already recorded; and a web search for each found only the
+bill sheets themselves. No contemporaneous report of any of the three exists that this archive can
+reach.
+
+## A citation that did not reach half its claim
+
+The 2025-26 campus safety entry cited "SGA Resolution 1-26-S and Senate minutes, 14 Apr 2026" under
+a single URL that opens only the resolution. The minutes half of the body — the Campus Safety and
+Security Committee reporting jointly with Student Mental Health and Wellbeing under chair Veronica
+Butler — was not checkable from the citation. The claim itself is good: the minutes of 14 April
+2026 carry it at the committee reports, and the archive already mirrors that file. The entry now
+carries a second citation pointing at the minutes, with the on-site copy attached, so both halves
+open. The resolution's own outcome lines are blank and the body now says so; these minutes record
+"Bill 21-26-S has passed" when they can, so the silence is informative.
+
+## Judgements left standing
+
+The duplicate pairs are the same five, judged the same way: the designated-driver cards of November
+1997 and their distribution the following February, a student regent advisory committee bill
+introduced in January 1992 and failing in February, the Civil Liberties Union suit planned in
+February 1972 and endorsed in March, the plus/minus grading stand of September 2003 and the
+legislation three weeks later, and 2026-27's syllabus statement and election opening, which are
+different business from one article.
+
+## Checks
+
+`build.py` exit 0; `check_data.py` exit 0; `check_contrib.py` exit 0; `check_duplicates.py` exit 1,
+its ordinary signal that it has pairs to judge.
+
+61 years, 1,964 events — unchanged, because six entries were rewritten and none removed. 60 people
+have been president. 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%)
+carrying an account, 48 people under more than one spelling. 308 documents, 1,111 pieces of
+legislation, every file a real PDF. 1,312 volume-and-number citations, each opening the issue it
+names, 1,298 also dated. 1,319 quoted spans, none reaching 15 words. 4,945 search records. The
+build withheld 5 photographs and left out the 2 barred identifications.
+
+## Still open
+
+The standing list is unchanged and none of it was touched: the Boka spelling, which wants the
+owner's decision; the Steve Wilson portrait; the 2021 Dahmer remand; the publication-date filing
+convention and the 2017-18 pair across two dates; the 26 March 2018 committee-chair amendment; the
+Mark Clark / Divya Gangavelli lead; and the Alistar / Alastair Flowers spelling. The 189-slot
+portrait gap did not move.
+
+Two notes for the owner carry over from yesterday and are worth repeating rather than leaving to
+go stale. Every year page still stamps today's date as "revised" in its preferred citation whether
+or not that year changed, so a reader citing 1966-67 today cites a page that has not moved in
+weeks; stamping the year's own last modification is a one-line change but rewrites every published
+citation string, so it is the owner's call. And `check_data.py` still validates `photos.json`
+without consulting the bar list, so the bar depends on the build getting it right rather than
+being self-enforcing.
+
+One new note of my own. Nothing in the validators can see the defect this pass corrected: an entry
+may assert any outcome it likes in prose, and no check compares that prose against the Pass line of
+the sheet it cites. What made the six findable was that their titles used a finished verb — "put",
+"raised", "paid", "returned", "created", "funded" — over a source with a blank outcome. That is
+mechanical enough to flag. A check that lists events citing a bill sheet whose Pass line is empty
+while the entry's title or body speaks in the past tense would not decide anything on its own, in
+the way `check_duplicates.py` does not, but it would put the question in front of an editor instead
+of waiting for a random sample to land on it. I have not built it this pass; it belongs in a run of
+its own, with its leads read at source before any of them are acted on.
