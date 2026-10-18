@@ -50498,3 +50498,220 @@ The 189-slot portrait gap did not move.
 The drop box was again unavailable: `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are both absent, as
 on 12 and 17 October. Route one carried this report, so nothing was lost, but the two routes are
 still not independent backups of each other here.
+
+# 18 October 2026 — second scheduled review
+
+Two pull requests open, both reviewed and both merged. Neither touched the record: #818 added
+the 18 October night-report entry, #819 the photograph run's note for the same day. No `data/`,
+`api/`, `scripts/` or `site/` change reached main from either, so nothing in the published
+history moved today.
+
+## #819, photographs — merged as is
+
+Every claim sampled held against its source, and nothing wanted cutting or trimming.
+
+The run's one substantive finding is a negative one, and it verifies exactly: archive.org holds
+19 Talisman "west" volumes and no more — 1943, 1946, 1947, 1963 to 1965, an unbroken 1971 to
+1981, then 1986 and 1987. Re-run here independently against the unpaginated scrape endpoint,
+the count, the identifiers and the claim of no gap inside 1971-1981 all match. That closes the
+false lead that 1974, 1976 and 1978 might be newly available before it could cost a later run a
+session. The gap figures check exactly as well: 189 officer slots with no portrait, 159 people,
+157 of them with no portrait in any year; and all 73 leader records across 61 years carry a
+portrait, with no year left without a photograph.
+
+The four network states were retested rather than assumed, and all four match: `viewcontent.cgi`
+answers 403 with the Cloudflare challenge body, `web.archive.org` fails at the connection layer,
+`archive.org` and `wkuherald.com` answer 200. The digitalcommons landing page answers 301 to its
+canonical URL rather than the bare 200 reported, which changes nothing.
+
+On the trap that matters most for an officer sweep, the run stayed clean: all six sampled names
+match the file, and Morgan Wysong is described as Public Relations Committee Chair rather than
+promoted to an officer. Every name was searched in full, none by surname.
+
+## #818, the night report — merged after two corrections
+
+The entry's reasoning was sound and its conclusions hold, but two figures in it were wrong, and
+both were figures nothing in that run had checked. They were corrected on the branch rather than
+cut, because the argument around them survives.
+
+**The duplicate check does not exit 0.** It ends `return 1 if (pairs or sourced) else 0`, so it
+returns 1 whenever it has a pair to report: 1 is its ordinary signal, not a failure. Read as 0
+the claim also contradicted the five pairs the same entry goes on to list. The identical error
+is already published in the 17 October seventh-review entry, so this is a slip being copied
+forward rather than a one-off.
+
+**The claim that 17 branches differ from main in `data/`, `api/` or `scripts/` is not
+reproducible.** A tip-tree content diff returns 462 of 466; among `research-*` branches, 85 of
+87 differ in `data/` alone. No subset or reading of the test reproduces 17. The figure is
+withdrawn.
+
+What that entry was reaching for, though — that nothing is sitting unpublished — is true, and it
+now rests on a test of the record instead of of the file trees. Across the 466 non-main branches
+there are 505 event entries, by year, date and title, that main does not carry. Narrowed to
+those with no main entry within seven days in the same academic year, 35 remain, and all 35 are
+accounted for in main under a corrected academic year, a corrected date or a revised title, most
+of them the April-elects-forward refiling. One entry was genuinely dropped rather than
+rewritten: 2003-04's "The Constitutional Convention rebuilds the body", sourced to the
+`wku.edu/sga` history page, which main covers instead with two contemporaneously sourced
+entries — Congress approving the constitution on the fifth attempt on 12 February 2004, and the
+referendum of 1 March 2004. Dropping a later compiled list in favour of two contemporaneous
+reports was right. No research is rotting on a branch.
+
+The entry's other checkable claims all held: every build and validator figure exactly, the four
+title pairs and one same-source pair, each of the five duplicate judgements, #6, #7 and #8 closed
+and unmerged since 18 August 2026, and #810, #812 and #815 merged with the subjects given them.
+The 1997-98 pair is the advance-notice trap handled properly — the February entry says the cards
+would be distributed the next day and states outright that the archive holds only a contents
+listing. Its "465 branches" now reads 467, which is drift since it was written, not an error.
+
+## The lesson worth carrying
+
+A count in a report is a claim like any other, and both failures today were counts sitting beside
+conclusions that were sound. The exit-code one had been reproduced from the previous entry
+without being re-run. Where a figure carries an argument, re-derive it in the run that publishes
+it, and state the test precisely enough that the next pass can repeat it.
+
+## Checks
+
+`build.py` clean; `check_data.py` exit 0; `check_contrib.py` exit 0; `check_duplicates.py`
+exits 1, its ordinary signal that it has pairs to judge, reporting the same four title pairs and
+one same-source pair as the previous passes, all judged separate events again.
+
+61 years, 1,964 events, 60 people have been president. 2,651 recorded terms of office held by
+1,809 people, 2,614 of them (98%) carrying an account of what the person did, 48 people recorded
+under more than one spelling or name. 1,111 pieces of legislation, every file a real PDF. 1,311
+volume-and-number citations, each opening the issue it names; 1,297 also dated. 1,318 quoted
+spans, none reaching 15 words. The build again withheld 5 photographs, which is the barring rule
+working as intended.
+
+## Still open
+
+Untouched by this pass: the Boka spelling, which wants the owner's decision; Xavier Spiess's
+roster entry and its missing source; the Steve Wilson portrait; the 2021 Dahmer remand; the
+Hawkins / Vuleta seat conflict; the publication-date filing convention and the 2017-18 pair
+across two dates; the 26 March 2018 committee-chair amendment; the Mark Clark / Divya Gangavelli
+lead; and the Alistar / Alastair Flowers spelling. The 189-slot portrait gap did not move.
+
+One standing item for the owner: the brief this routine runs from still names #6, #7 and #8 as
+open and stale and in need of rescue or closing. All three have been closed and unmerged since
+18 August 2026, and each pass spends part of its run rediscovering that. The drop box was
+unavailable again — `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` both absent — but push access was
+open, so nothing was lost.
+
+# 18 October 2026 — third scheduled review
+
+No pull request was open. The queue has been empty since #819 and #820 merged at half past three
+this morning, and no research branch is holding anything back: `research-photos`, the only branch
+pushed in the last six weeks, is behind main rather than ahead of it, and its 18 October note is
+already published. So this pass spent itself on the record instead of on a diff, and found a
+dating error running through three entries.
+
+## The escort service did not begin in September 1982
+
+The 1982-83 entry "A volunteer student escort service" said the service "began operating" on
+2 September 1982. It did not, and the entry's own source says so: in the same breath it reported
+coordinator James Hunter giving the service's record — about 500 to 600 requests filled in its
+first year, without a single incident. A service cannot have a first year behind it on the day it
+starts. The contradiction sat inside one sourced paragraph and had been read past.
+
+The unfiltered index settles the direction. *Herald* 57:30 of 12 January 1982 carries Sharon
+Wright's "Interhall Council Student Escort Service to Begin Monday", a semester before the
+September entry, and the same index shows the scheme pausing and restarting with the academic
+year — Barry Rose's "Escort Service Will Resume" in August 1983. The September 1982 article is a
+new year's notice for a running service, not its first day.
+
+The start date had been copied into two other entries, which is how a single wrong fact becomes
+three. 1981-82's Bush interview entry placed the campus police service "a year before" the
+volunteer one; 1982-83's Jack Smith letter put the applause "about eight weeks after" the scheme
+began. Both derived timings are gone. Nothing sourced was cut from any of the three: Hunter's
+claim that Western was the first university in the country with a completely volunteer
+student-operated service, his request figures, and public safety director Paul Bunch's account of
+demand tripling after two students were raped the previous year all stand, attributed as the
+Herald attributed them. The September entry now says plainly that the service was already running,
+and carries the January issue as a second citation.
+
+What it does not say is that the service began on 12 January 1982. "To Begin Monday" is an advance
+notice, and this archive's first trap is that a notice proves what was announced and never what
+happened. The full text would settle it, and could not be read: `viewcontent.cgi` answered 403 with
+the Cloudflare challenge again, as it has all week. Reading *Herald* 58:4 and 57:30 whole is the
+next pass's job, and the January issue is now cited where that pass will find it.
+
+## Fifteen entries read at source, and two false alarms of my own
+
+Eight entries were checked against sources opened in full, and seven more against the unfiltered
+index, drawn by random sample across 1970 to 2026 rather than chosen.
+
+Read in full and correct in every particular: Bill 27-23-S, which gives Danny Vuleta's seat as
+First Generation Senator, Adan Canizalez's as Senator at Large and Lauren Willett as Chief of
+Staff — the titles come off the bill's own author line rather than being inferred from authorship,
+which is the trap that killed all 39 missing-president claims — and passes 34-0 after a second
+reading on 7 February 2023. Bill 8-22-F likewise, down to the $285 and $215 split and Megan
+Pierce's name, which the PDF's line wrap invites you to read as "Pierce-Potter" and the archive
+does not; its Pass line is blank and the entry says so rather than inventing an outcome. The three
+November 2025 Judicial Council entries all hold, including the censure heard against Senator Jade
+Ismail and dismissed 7-0, where the outcome is stated as the living-persons rule requires and the
+complainants are named no further than the *Herald* named them. The three 2026-27 entries sharing
+one meeting report are three pieces of business, not one written up three times, and stay separate.
+
+Checked against the index and exact: the Kiss booking of November 1974, Kaye Thomas's discount card
+and Clark Hanes's quorum failure of September 1970, Kim Leonard's housing report and Jason Hall's
+Provide-A-Ride of September 1996, Mattias Karen's "Big-Name Concerts May Arrive on Campus" of
+October 1999, Monica Dias on the Wall of Fame and on the coed housing bill, and Sharon Wright's
+"Concert Packs Diddle Arena" — a report of a night that happened, not a booking notice.
+
+That 1999 entry deserves naming as the standard the rest should meet. The headline says concerts
+"may arrive"; the entry says the paper trail stops at the possibility, and claims nothing further.
+That is the advance-notice trap handled exactly right.
+
+Two things I took for findings and was wrong about, both recorded because the reasoning is worth
+not repeating. I read the 2026-27 bus-tracking and election entries as carrying uncited facts —
+Isaiah Wilson's co-authorship and the election's close — because my inspection script printed only
+`src` and not `src2`. Both were already cited, to the *Herald* of 15 and 29 September, and both
+citations turn out to say exactly what is claimed of them, so the check was worth running and the
+conclusion was not. The guard that caught it was an assertion in the edit script rather than
+anything I noticed. Second: my first run of the validators piped them through `tail`, which reports
+the exit code of `tail`. That is the same mistake this file recorded two entries ago about
+`check_duplicates`, made again a day later by a different route, which suggests the lesson needs to
+be about the pipe and not about the one script.
+
+## Judgements left standing
+
+The four title pairs and the one same-source pair are the same the last several passes saw, and are
+separate events again. The 1997-98 designated-driver pair remains the advance-notice rule working:
+the February entry states outright that the archive holds only a contents listing.
+
+One small thing for the owner, not acted on. Every year page carries "revised <date>" in its
+preferred citation, and the build stamps today's date on all 61 whether or not the year changed. A
+reader citing 1966-67 as revised 18 October 2026 is citing a page that has not moved in weeks. It
+is a one-line change to stamp the year's own last modification instead, but it changes every
+published citation string, so it is the owner's call rather than mine.
+
+## Checks
+
+`build.py` exit 0; `check_data.py` exit 0; `check_contrib.py` exit 0; `check_duplicates.py` exit 1,
+its ordinary signal that it has pairs to judge.
+
+61 years, 1,964 events, 60 people have been president. 2,651 recorded terms of office held by 1,809
+people, 2,614 of them (98%) carrying an account of what the person did, 48 people recorded under
+more than one spelling or name. 1,111 pieces of legislation, every file a real PDF. 1,312
+volume-and-number citations, each opening the issue it names, 1,298 of them also dated — one more
+than yesterday, which is the January 1982 issue added above. 1,319 quoted spans, none reaching 15
+words. The build again withheld 5 photographs.
+
+## Still open
+
+Untouched by this pass: the Boka spelling, which wants the owner's decision; the Steve Wilson
+portrait; the 2021 Dahmer remand; the publication-date filing convention and the 2017-18 pair across
+two dates; the 26 March 2018 committee-chair amendment; the Mark Clark / Divya Gangavelli lead; and
+the Alistar / Alastair Flowers spelling. The 189-slot portrait gap did not move.
+
+Two items on that standing list can come off it. Xavier Spiess has no roster entry to source: he
+appears only in the prose of two 2025-26 profiles, as the associate justice who lost the chief
+justice election 3-1, and both mentions are carried by events cited in that year. The Hawkins /
+Vuleta pairing is not a seat conflict either — Tramaine Hawkins sat as ISEC Senator and Danny
+Vuleta as First Generation Senator, each title taken from the author line of a different bill,
+both read at source this pass.
+
+The brief this routine runs from still describes #6, #7 and #8 as open and stale. They have been
+closed since 18 August 2026. The drop box was unavailable again, `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` both absent, but push access was open and carried this report.
