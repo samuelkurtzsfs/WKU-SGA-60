@@ -1,3 +1,149 @@
+# 18 October 2026 (editor, scheduled) — #826 merged after four corrections, and a Steve Wilson lead reopened that the routine had written off on a false negative
+
+## What was open
+
+One pull request: #826, `research-photos`, "Research: photographs, 18 October third scheduled
+pass", opened the same day at 14:08. One commit, one file, 93 additions, no deletions, based on
+the current tip of `main` and mergeable clean. Nothing else was open.
+
+`gh pr list` answered 403 naming GraphQL, as it does on every pass. `gh api` and `git push`
+both worked and the repository reported `admin`, `maintain`, `push`, `pull` and `triage` all
+true, so this was a full-mode pass. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset, so
+route two remains unavailable and route one was again the only way to land anything.
+
+The standing brief still names #6, #7 and #8 as open and stale since 4 August. They have been
+closed unmerged since 18 August 2026, and this is now the twenty-first pass to record it.
+
+## What #826 contained
+
+A research log and nothing else: `.research/photo-run-2026-10-18-third-scheduled.md`. No file
+under `data/` changed, no photograph was added, and `.research/` is not published, so nothing in
+this branch could reach the live site whatever it said. Its value is entirely in what it tells
+the next run: which portrait leads are closed, and why.
+
+That is also what made it worth checking carefully rather than waving through. A research log
+that wrongly closes a lead costs more than a thin year does, because the next run reads it and
+does not look again.
+
+## What held up
+
+Fourteen claims were checked at source rather than taken from the report. The substance of the
+run is sound, and its central decision was right.
+
+The 1978 *Talisman* caption is **verbatim** as quoted, confirmed against the full text of
+`talisman1978west`: a light moment in an ASG meeting, naming president Bob Moore, activities vice
+president David Bass, secretary Sharon May and vice president Cathy Murphy. The index entry
+`Bass, David Eugene 34` is there, and it really is his only appearance in the volume — two hits
+in the whole file, the caption and the index line. All four people the caption names are the
+1977-78 executive in `years.json`: Robert Moore president, Bass activities vice president, May
+secretary, Murphy administrative vice president. The year is right and the identification of the
+page is right.
+
+**The photograph was found, examined, and correctly left unattached.** The caption names four
+people and the frame shows three, none of whom can be matched to a name. That is exactly the case
+CLAUDE.md's rule exists for, and the run reached the right answer without being told. This is the
+reason the pull request was worth merging at all.
+
+Three negative findings were reconfirmed independently. Vern Pulman does not appear anywhere in
+`talisman1975west`. Alice Wicks's index entry carries no page number at all — checked raw, against
+the neighbouring `Wickson, Dick 241`, which does. Neither Chris Millay nor Dwight Austin appears
+in the 1986 or 1987 volumes: `dwight` returns zero hits across the whole of `talisman1986west`,
+and every Millay in either book is Beth Ann or Lori Ann. The 1986 text needed a second attempt —
+archive.org's download path answered 500 and the item's own server node served it.
+
+The numbers all match exactly. `portrait_gap.py` reports 189 slots carrying no portrait, held by
+159 people, 157 of them with no portrait in any year — as the log says. 61 years, 73 leader
+records, zero leaders without a portrait, zero years without a photograph.
+
+## What was corrected
+
+Four claims did not survive, and corrections were pushed to the branch as `106c425` before the
+merge. None of them touched `data/`; all four were in the research record.
+
+**A Steve Wilson lead was reported as ruled out, and is not.** This is the one that mattered. The
+run searched the body text of `talisman1979west` for "Steve Wilson", found only Gordon Wilson
+Hall, Ivan Wilson Fine Arts Center and a Poland Hall resident assistant named Stu Wilson, and
+wrote the lead off as "no hit; every Wilson in the volume is a different person". The volume's own
+alphabetical index carries `Wilson, Steve Alan 296, 318, 320, 336`. Printed page 296 is a Pre-Law
+Club group photograph whose caption ends with a back row including an S. Wilson, on a page whose
+text discusses ASG; page 320 names a Steve Wilson in a Spring Sing barbershop quartet alongside
+the same Jon Rue who is in that back row. Whether this Steve Wilson is the 1978-79 Judicial
+Council Chairman is **not established** — and a back-row initial would not be a confirmable
+portrait even if it were — but it is not ruled out either, and three of the four indexed pages
+have not been looked at. The lead is reopened in the log with the index entry as its starting
+point.
+
+**David Young was named once, not three times.** The single mention is body text on printed page
+289, leaf 290, on the new 24-seat congress structure. The run's conclusion was nonetheless
+correct: the only captioned photograph on that page is of unread ASG newsletters lying on the
+floor of Pearce-Ford Tower. The volume's index entry `Young, David Paul 289` points at that same
+body-text mention, not at a portrait. The other `Young` hits are Rodney Young, Rita Young and a
+`K. Young` in a group caption.
+
+**The name count contradicted itself three ways** — six in the title, five in the section heading
+and again in the conclusion, seven in the list itself. It is seven: six ruled out, one left open.
+
+**A family relationship was asserted from a shared surname.** The log described William G. Chesnut
+as Mark Chesnut's brother. Nothing in the sources cited establishes any relation between them, and
+inferring one from a surname is the trap the handoff lists fourth. Cut.
+
+## The traps checklist against this diff
+
+No events were added, so there was no advance notice to catch, no April result to file forward and
+no living-person overreach to trim. No committee chair was promoted to officer on the site. The
+two surname problems were both inside the log and are both fixed. No contributor edit was in this
+diff. Nothing contradicted the settled facts; the page-289 account of the regents moving
+entertainment to a rebuilt University Center Board in fall 1979 agrees with what the handoff
+already settles about 31 March 1979.
+
+One office attribution in the log was also wrong against our own data and was corrected: Steve
+Roadcap was credited with Legislative Research in 1996-97, which is Andy Gailor's committee.
+`years.json` has Roadcap as Treasurer that year.
+
+`check_duplicates.py` reported four pairs and one same-source pair. All five are pre-existing on
+`main` — this diff adds no events — and all five are genuinely separate events. The closest, at
+0.6, is 1997-98's designated driver cards: a bill passing on 4 November 1997 with an X on its Pass
+line, and the *Herald* reporting the cards going out on 17 February 1998. Three months apart, two
+sources, and the second entry is honest that the archive holds only a contents listing. Nothing
+was merged.
+
+## What the routine needs to do differently
+
+The index is a first-class source, and this run already knew that — it used the index correctly
+for David Bass and for Alice Wicks, then fell back to a body-text string search for Steve Wilson
+and trusted the miss. A search for a full name in body text cannot see an index entry, and in a
+yearbook the index is precisely where being pictured is recorded. Check the index before writing
+"no hit", and never write "ruled out, a future run need not look again" off a negative string
+search: that phrasing is what converts a false negative into a permanently closed lead. A count
+stated three times in one document should agree with itself.
+
+## Counts after the merge
+
+61 years, 1,964 events, 60 people have been president. 2,651 recorded terms of office held by
+1,809 people, 2,614 of them (98%) carrying an account of what the person did; 48 people recorded
+under more than one spelling or name. 1,111 pieces of legislation, every file present and a real
+PDF. 308 documents. 1,312 citations naming a volume and number, 1,298 also naming a date, each
+matching the issue's own bar the one where the catalogue is wrong. 1,319 quoted spans, none
+reaching 15 words. The search index holds 4,945 records. `build.py` completed cleanly and
+`check_data.py`, `check_contrib.py` and `check_duplicates.py` all exited 0, before and after the
+corrections.
+
+The portrait gap is unchanged at 189 slots: no portrait was found this pass, which the log is
+straightforward about.
+
+## Still open
+
+Nothing. #826 is merged and no other pull request is open.
+
+Worth the owner's eye, as housekeeping rather than an editorial matter: 87 `research-*` branches
+are still on origin. A previous pass established by content comparison that none carries unlanded
+research — the old 4 August ones differ from `main` only in generated `site/` files and have no
+merge base with it — but the three most recent `research-editor-10*` branches each hold a night
+report that was pushed and never merged, which is how the pile grows. This entry is being landed
+through a pull request and merged, rather than left on its branch.
+
+---
+
 # 16 October 2026 (editor, sixth review) — one PR merged, and a name reported absent from the Herald that this archive's own entry already cited
 
 ## What was open
