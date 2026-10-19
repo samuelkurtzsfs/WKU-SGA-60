@@ -51385,3 +51385,120 @@ while the entry's title or body speaks in the past tense would not decide anythi
 the way `check_duplicates.py` does not, but it would put the question in front of an editor instead
 of waiting for a random sample to land on it. I have not built it this pass; it belongs in a run of
 its own, with its leads read at source before any of them are acted on.
+
+# 19 October 2026 (editor, scheduled review) — an empty queue, and the blank-outcome check built and run
+
+No pull request was open. The board has been clear since #831 merged at 21:30 last night, every
+research branch is either merged or one of the superseded 4 August snapshots, and `research-photos`
+sits level with main. The three stale branches the standing brief names — #6, #7 and #8 — were
+closed long ago; the repository is 823 pull requests past them, and that paragraph of the brief is
+now describing a board that no longer exists.
+
+## Why this pass built something instead
+
+Three of the last four substantive passes found the same defect by random sampling: an entry that
+states an outcome its only source does not record. #810 found one, #825 found six, #828 found four.
+Last night's report set out what a mechanical flag for it would look like and said it belonged in a
+run of its own. The queue being empty, this was that run.
+
+`scripts/check_outcomes.py` takes every event citing a bill sheet the archive holds, reads the
+Pass / Fail / Other lines off the page, and flags the ones where the sheet records no outcome and
+the entry speaks in a finished verb. It decides nothing, in the way `check_duplicates.py` decides
+nothing. 235 events cite a sheet; 22 are flagged after this pass's corrections.
+
+## The check had to be calibrated twice before it could be trusted
+
+The first version read a lone bullet on the Fail line of Bill 03-04-F and a stray comma on
+04-07-S as recorded outcomes. Both sheets are blank in the text layer and visibly carry a
+handwritten tick, which is the pair the handoff already uses to make exactly this point, so the
+check was suppressing the leads it existed to raise. A mark now has to carry a letter or a digit.
+
+The second fault was worse and ran the other way. The sheets are scans, and the OCR breaks the
+labels into fragments: `Pass:` arrives as `Pa` + `ss:`, `Fail:` as `Fa` + `il:`. Matching word by
+word found neither, so Bill 01-3-S — whose Pass line carries a typed "February 20, 2001" — read as
+blank. The reader now groups words into rows by vertical midpoint and matches the label against the
+row's joined text, which handles the fragmentation and the 2000s template's split label and value
+blocks at the same time. Eight sheets of known outcome were used as the test: 97-3-F marked, 01-3-S
+marked, 03-04-F and 04-07-S blank-but-ticked, and four more. All eight now read correctly.
+
+## Seven entries stated an outcome their sheet does not record
+
+Each was rendered and looked at before a word was changed. None was deleted; each is rewritten in
+the voice the entries corrected on 18 October already use.
+
+- **Resolution 91-6-F**, the request that Joe Iracane not be re-elected chair of the Board of
+  Regents, was written up as one the Associated Student Government "passed". The form records only
+  "Introduced 10/29/91"; the reading, pass and fail lines are empty on the page image. This one is a
+  rescue rather than a trim, because the Herald carries what the form does not: 67:19 of 31 October
+  1991 reports ASG urging the Board to elect a new leader, and 67:20 of 5 November reports that the
+  Board re-elected Iracane anyway. Both citations are now on the entry, and the outcome — which the
+  archive did not previously record at all — is in the body.
+- **Bill 00-4-S** "established a campus-wide clean-up" on a sheet carrying a first reading of
+  22 February 2000 and nothing else. The handwriting beside the outcome lines is unrelated notes.
+- **Resolution 01-7-F** "created a corps of SGA ambassadors" off a first reading of 30 October 2001.
+- **Bills 4-18-S and 10-18-S** had the sustainability committee running a film series and holding an
+  Earth Day festival, and had $50 paying for posters and popcorn. Both sheets carry a first reading
+  and leave everything after it blank.
+- **Bill 9-22-S** "allocated $500" for dental hygiene vouchers off a first reading of 8 February
+  2022. Its closing claim that the voucher was still running four years later was true but uncited;
+  it now cites the Herald of 29 September 2026, where the senate funds twelve more.
+- **2006-07's study abroad entry** said both application forms survive in the archive dated the same
+  day. They do not: what survives is the two bills and Resolution 07-07-S of 24 April 2007, which
+  proposed naming the study abroad scholarship for Caitlin M. Hammaren, one of the students killed
+  at Virginia Tech that month. The naming resolution a month later, and SGA taking applications by
+  November 2009, are the real evidence the fund went ahead, and the entry now rests on those
+  instead of on holdings the archive does not have.
+
+## Four entries the check accused and the page image cleared
+
+Worth recording, because they are the argument for never letting this check decide anything.
+Bill 94-9-F's Pass line carries a handwritten tick and a rubber PASSED stamp across the page;
+03-02-F and 03-04-F each carry a tick; 01-3-S carries a typed pass date. All four entries were
+right and only the text layer was blind. The three verified by eye this pass are recorded in the
+script's `READ_BY_EYE` list with what was seen, so they stop returning as leads and the real ones
+are not lost among them.
+
+## Judgements left standing
+
+The duplicate pairs are the same five, judged the same way: the designated-driver cards of November
+1997 and their distribution the following February, a student regent advisory committee bill
+introduced in January 1992 and failing in February, the Civil Liberties Union suit planned in
+February 1972 and endorsed in March, the plus/minus grading stand of September 2003 and the
+legislation three weeks later, and 2026-27's syllabus statement and election opening, which are
+different business from one article.
+
+## Checks
+
+`build.py` exit 0; `check_data.py` exit 0; `check_contrib.py` exit 0; `check_duplicates.py` exit 1,
+its ordinary signal that it has pairs to judge.
+
+61 years, 1,964 events — unchanged, because seven entries were rewritten and none removed. 60 people
+have been president. 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%)
+carrying an account, 48 people under more than one spelling. 308 documents, 1,111 pieces of
+legislation, every file a real PDF. 1,314 volume-and-number citations, each opening the issue it
+names, 1,300 also dated — two more than yesterday, both the Herald issues added to the Iracane
+entry, and `check_data.py` confirms each opens the issue it cites on the date it gives. 1,321 quoted
+spans, none reaching 15 words. 4,945 search records. The build withheld 5 photographs and left out
+the 2 barred identifications.
+
+## Still open
+
+The standing list is unchanged and none of it was touched: the Boka spelling, which wants the
+owner's decision; the Steve Wilson portrait; the 2021 Dahmer remand; the publication-date filing
+convention and the 2017-18 pair across two dates; the 26 March 2018 committee-chair amendment; the
+Mark Clark / Divya Gangavelli lead; and the Alistar / Alastair Flowers spelling. The 189-slot
+portrait gap did not move.
+
+The twenty-two leads `check_outcomes.py` still raises are the obvious next run, and they are not all
+defects: several carry a Herald report of the vote alongside the blank sheet, which is a sound
+citation the check cannot see, and some will be ticks the text layer cannot see either. They want
+the same treatment as this pass gave the seven — render, look, then trim or rescue. Two sheets in
+the set have no text layer at all (Resolution 79-6 and Resolution 5-13-S) and need reading by eye
+before anything is said about them.
+
+The two notes for the owner carry over again. Every year page still stamps today's date as "revised"
+in its preferred citation whether or not that year changed, so tonight's build rewrote the citation
+string on all 61 year pages while 54 of them did not move; stamping the year's own last modification
+is a one-line change but rewrites every published citation string, so it is the owner's call. And
+`check_data.py` still validates `photos.json` without consulting the bar list, so the bar depends on
+the build getting it right rather than being self-enforcing.
