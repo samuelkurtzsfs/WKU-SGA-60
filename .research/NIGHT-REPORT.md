@@ -1,3 +1,84 @@
+# 19 October 2026 (editor, scheduled review) — #833 merged, and TopSCHOLAR is not as closed as the logs have been saying
+
+## What was open
+
+One pull request, #833, `research-photos`, the photograph routine's scheduled pass of 19 October.
+One commit, one file, `.research/photo-run-2026-10-19-scheduled.md`. Nothing under `data/`.
+`vercel.json` excludes `.research/**` and `build.py` reads only `branches-checked.json` and
+`branches-unverified.json` out of that directory, so no line of it reaches a reader.
+
+The three branches my standing brief still names as stale — #6, #7 and #8, open since 4 August —
+are closed and have been for weeks. The brief has said so to three successive reviews now. The
+numbering is at #833; that paragraph is dead and should come out of the routine's prompt.
+
+Nothing else is open. The recent `research-editor-*` branches that still read as ahead of main
+are squash-merge leftovers; their content is in main under #824, #827, #829 and #831.
+
+## What was read at source
+
+Ten claims, four checked against the data, six opened on the web.
+
+The data side matched exactly. 73 leader records across 61 years, every one carrying a portrait.
+`portrait_gap.py` returns 189 officer slots with no portrait, held by 159 people, 157 of them with
+no portrait in any year — the three numbers the log gives, to the person. Seven of the nine sworn
+in on 25 August 2026 already carry a portrait and Allen and Morris do not. `Molly Ricky` is
+already mapped to `Molly Ricke` in `name-aliases.json`, with the Herald's two spellings recorded,
+so the log's "Ricke/Ricky" is one person and not a duplicate waiting to happen.
+
+The web side held too. Herald media 98160 carries the Elizabeth Allen caption word for word as
+quoted, dated 15 October 2026, describing her as president of the pre-law student association with
+no SGA context in it anywhere. Media 96582, 96583 and 96584 all caption the swearing-in as a group
+or name only President Lucas; neither Allen nor Morris is picked out, which is what the log said.
+An advanced search of `archive.org` for `identifier:talisman*west` returns 19 items — 1943, 1946,
+1947, 1963-65, 1971-81, 1986, 1987 — so nothing for 1982-85 and nothing after 1987, as claimed.
+
+The Allen decision is the part of this run worth keeping. A cleanly captioned, directly quoted
+photograph of a person with the right name, at the right university, in the right semester, is
+exactly the identification that is tempting and wrong, and the routine declined it because the
+caption puts her in an unrelated student organisation and nothing joins the two offices. That is
+the portrait rule working as intended rather than being recited.
+
+## Where the log was wrong
+
+It reports both TopSCHOLAR routes "retested fresh" and "still closed". Half right.
+`cgi/viewcontent.cgi` is genuinely 403. The **landing pages are open**:
+`digitalcommons.wku.edu/dlsc_ua_records/2464/` returned HTTP 200 and 34 KB of the real record,
+carrying `Student Regent's 2-month Term Nears End – Sandra Norfleet` — the very citation this
+archive leans on to hold Norfleet at 1981-82.
+
+For a photograph run this changes nothing, because the page images are behind the endpoint that is
+shut, and declining to add a portrait was still right. For the other three routines it changes a
+good deal. CLAUDE.md is explicit that a miss in the local index proves nothing and that the
+landing page gets opened before anything negative is concluded. A run that reads "TopSCHOLAR
+closed" in a prior log and stands down has given up the one route that was answering, and will
+write "no source found" against claims sitting on a page it could have fetched. The two endpoints
+need testing and recording separately from here on. Note also that the landing page without its
+trailing slash returns a 301, which is easy to misread as a refusal.
+
+One smaller thing, left in place rather than rewritten. The log calls all nine posts sworn in on
+25 August "committee chairs"; the year's own event records Molly Ricke as Secretary of the Senate,
+so it is eight chairs and a secretary. It is a `.research` note that nobody reads and it changes
+nothing about the finding, but roles should come off the event body, not the Herald's headline.
+
+## Duplicates
+
+`check_duplicates.py` printed four title-similarity pairs and one same-source pair, all of them
+already on main and none introduced here. All five are genuinely separate events and none was
+merged: 1997-98, bill 97-3-F passing in November against the cards reaching students the following
+February; 1991-92, Bill #92-01-S introduced on 28 January against the same bill failing after
+amendment on 6 February; 1971-72, the KCLU planning court action in February against ASG formally
+endorsing the suit a month later, where the second entry already cross-references the first;
+2003-04, members objecting to plus/minus grading in September against the legislation carrying
+unanimously in October; and 2026-27, the syllabus mental-health statement and the fall election
+opening, two pieces of business from one meeting in one Herald article.
+
+## Result
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. 61 years, 1,964 events,
+60 presidents, 73 leader records, 308 documents, 1,111 pieces of legislation, 2,651 recorded terms
+of office held by 1,809 people, 2,614 of them (98%) carrying an account of what the person did.
+#833 merged. Nothing cut and nothing trimmed, because nothing in it needed it.
+
 # 18 October 2026 (editor, seventh review) — a Steve Wilson lead properly run to ground, and a photograph logged against the wrong club
 
 ## What was open
