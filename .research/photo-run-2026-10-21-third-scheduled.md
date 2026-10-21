@@ -59,6 +59,47 @@ All four hits are primary-source text documents SGA itself produced — minutes 
 as CLAUDE.md predicts for this office and era: real confirmation of the role, never a photograph.
 No new portrait lead from this batch.
 
+## A genuinely new route found and partly tested: archive.org's IIIF image endpoint
+
+The 20 October third-scheduled-pass note (on this same branch) describes pulling Talisman page
+images "directly from archive.org's JP2 scans" for three names, bypassing the blocked
+`digitalcommons.wku.edu` PDF endpoint entirely, but does not record the mechanism. Rediscovered and
+pinned down here: `https://iiif.archive.org/iiif/<identifier>$<leaf>/full/<size>,/0/default.jpg`
+serves a real JPEG of one page directly, with no `viewcontent.cgi` and no `web.archive.org`
+involved — confirmed with leaves 0, 295, 305 and 310 of `talisman1979west`, all genuine page
+images (two of them the "Organizations" section, printed pages 293 and 303).
+
+**The `<leaf>` index is not the printed page number.** Comparing the printed folio visible on
+leaf 295 ("293") and leaf 305 ("303") against their leaf numbers gives a consistent offset of
+exactly 2 for this volume: `leaf = printed_page + 2`. This offset is front-matter-dependent and
+should be re-derived per volume, not assumed to transfer.
+
+Used this to target **David Young** (Administrative Vice President, 1978-79, currently a gap):
+the student directory/index at the back of `talisman1979west` (`grep -n "Young, David"` in the
+`_djvu.txt`) gives "Young, David Paul 289", which by the offset above is leaf 291. The route itself
+is real — leaves 0, 295, 305, 310 all came back as genuine images earlier in this session — but
+`iiif.archive.org` then closed mid-session before leaf 291 (or neighbours 290/292) could be
+fetched: four consecutive attempts came back `connection reset by peer` at the egress proxy, and a
+fifth attempt against leaf 310 — which had answered cleanly minutes before — reset the same way,
+confirming the window shut rather than that leaf 291 specifically is bad. This is the same
+open-and-close-within-the-hour pattern `SGA-60-AGENT-INFO.md` §8.4 already documents for
+`viewcontent.cgi`; it evidently applies to this endpoint too.
+
+Also checked while the index was open, text only, no image fetch needed: **Alice Wicks**
+(Secretary, 1978-79) appears in the same `talisman1979west` directory as "Wicks, Alice Elizabeth"
+with **no page number** — every neighbouring entry that has an individual portrait carries one
+(e.g. "Wickson, Dick 241" two lines below), so the absence is suggestive that she has no individual
+senior portrait in this volume, though an index gap is not certain proof the way a confirmed page
+number would be. **Chris Millay** and **Dwight Austin** (Parliamentarian and Sergeant-at-Arms,
+1986-87): searched `talisman1987west`'s full text directly; Millay's only hit is a different person
+(Lori Millay of Owensboro, a commencement-photo caption, unrelated), and Austin does not appear at
+all outside "Austin Peay" (the university).
+
+**For the next run:** the IIIF route is worth trying again on a fresh window, specifically leaf 291
+of `talisman1979west` for David Young — the index page number and the offset are already worked
+out, so a future pass can go straight to the fetch rather than re-deriving either. Nothing in
+`data/` changed from this lead; no portrait was identified or added.
+
 ## What this run leaves unchanged
 
 `data/photos.json` and `data/photos/` are unchanged from the last commit on this branch. 189
