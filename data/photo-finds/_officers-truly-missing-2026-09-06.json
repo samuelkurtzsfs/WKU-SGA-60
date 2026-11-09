@@ -1190,7 +1190,7 @@
   "years": [
    "1980-81"
   ],
-  "note": "Zero hits in the local Herald full index. 1981 Talisman index (archive.org) lists \"Thomas, Deborah Lynn 356\"; page not opened this run for lack of time, left for a future pass rather than ruled out by a direct check."
+  "note": "Zero hits in the local Herald full index. The 1981 Talisman index (archive.org) lists two candidates: \"Thomas, Deborah Lynn 356\" and a second \"Thomas, Debra Ann\" with no page number, so the name alone does not pick one. Opened printed page 356 (leaf n359 of talisman1981west, via scripts/talisman.py) on 9 November: it is the Juniors class-directory grid, and the block of names beside the matching photo row reads \"DEBORAH L. THOMAS, Glasgow / GREGORY S. THOMAS, Columbia / JAMES A. THOMASON, Morgantown / ...\", nine names against nine thumbnails, with Deborah L. Thomas first and leftmost. The years.json note on the Complaint and Suggestion committee chair gives only \"Debbie Thomas, named 2 September 1980\" - no hometown, class or middle name - so there is nothing to confirm this Glasgow junior is the same Debbie Thomas against the unlocated Debra Ann Thomas, and surname-plus-first-name alone is exactly the match CLAUDE.md rules out. Left unconfirmed, not added to photos.json. A future pass with a hometown, major or middle initial from the SGA minutes could settle it."
  },
  {
   "name": "Kristin Hartley",
