@@ -117,7 +117,8 @@
   "why": "UA77/1 WKU Spirit, 2007. The contents list a profile headed 'Scholarship Recipient Katherine Smith'. A donor magazine runs a photograph of the student with that kind of profile. Katherine Smith is a common name, so this one is only usable if the piece also gives a detail that ties her to the Katherine Smith who sat in the 2007-08 senate; worth a look rather than a certainty.",
   "who": [
    "Katherine Smith"
-  ]
+  ],
+  "note": "TRIED, 9 November 2026. Landing page opens directly (no viewcontent redirect needed for the page itself) and its contents list confirms the profile exists, but the metadata gives nothing past the headline - no detail there ties this Katherine Smith to the senator. The article PDF itself is viewcontent id article=9621, and that route answered HTTP 403 (Cloudflare) this pass; the web.archive.org id_ bypass that has opened other viewcontent PDFs this month was also closed this pass (tunnel reset on every attempt, both a replay fetch and a CDX query). Neither route reached the actual page, so this is unresolved rather than closed - worth retrying when either route is next open, not worth re-opening the landing page again."
  },
  {
   "want": "https://digitalcommons.wku.edu/dlsc_ua_records/5162",
