@@ -205,5 +205,12 @@
    "label": "WKU News, 'Bradon Burks crowned WKU's 2021 Coming Home King'",
    "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=9466"
   }
+ },
+ {
+  "name": "Mallory Hardesty, Garrett Baum, Kayla Distler, Connor Ferguson, Elizabeth Gannon, David Darnell, Reed Hensley, Brooke Mitchell, Neel Patel, Tyreesha Morris, Danny Vuleta",
+  "year": "2021-22 to 2025-26",
+  "outcome": "not found - no individually captioned photograph in wkuherald.com's text or imagery",
+  "detail": "Eleven of the still-open n2025 gap names (portrait_gap.py --any-year, 8 November 2026) searched against wkuherald.com's WordPress API while digitalcommons.wku.edu and web.archive.org were both closed this session. Danny Vuleta returns zero posts. Every other name returns between two and five posts, and every one that mentions SGA business is a text-only results or bill-passage story with no figure element at all (checked the raw post content for <figure>/<figcaption> tags, not just the featured image), or a non-SGA sports/athletics story for a different person of the same name (Brooke Mitchell, 2003-04 softball). The two posts carrying a real photograph - 'SGA kicks off 60th year on campus, swears in new committee chairs' (96580, 25 Aug 2026, for Tyreesha Morris) and 'SGA voting opens today: Who is on the ballot' (3942, 12 Apr 2021, for Garrett Baum) - are both uncaptioned-by-name group or meeting shots (a committee-chair swearing-in ceremony and an executive-cabinet meeting), with no figure keyed to an individual. 'SGA announces election results' (71533, 19 Apr 2023, which names Distler, Darnell and Gannon as newly elected senators) and 'SGA spring general election voting' (76396, 15 Apr 2024, for Darnell) are both pure text with zero figures. Nothing here is usable under this project's own rule against identifying a subject without a caption naming them.",
+  "checked": "wkuherald.com /wp-json/wp/v2/posts search per name, 5 results max each; full post content fetched and scanned for <figure> elements for every SGA-related hit (96580, 3942, 71533, 76396); featured-media caption and alt text for the three posts with a real photograph"
  }
 ]

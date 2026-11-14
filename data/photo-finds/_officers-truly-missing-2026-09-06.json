@@ -1075,7 +1075,7 @@
   ]
  },
  {
-  "name": "ShyAnte’e Williams",
+  "name": "ShyAnte\u2019e Williams",
   "years": [
    "2022-23"
   ]
@@ -1170,5 +1170,117 @@
    "1980-81"
   ],
   "note": "1981 Talisman p.234 read directly (leaf n237, archive.org): a Men's Intramurals results table, no photograph on the page. Names a 'Mark Chestnut' (Sigma Alpha Epsilon) twice as an intramural event winner, badminton singles and racquetball doubles with Mitch Gum. The yearbook's own index gives 'Chesnut, Mark Cameron 234' for this page, so the table's spelling is probably the yearbook's typo, but nothing on the page ties the intramural winner to the ASG treasurer term and the two are not established here as the same person. The index page reference was real but does not lead to a portrait."
+ },
+ {
+  "name": "Alan Jackson",
+  "years": [
+   "1980-81"
+  ],
+  "note": "Local Herald index hits for this exact name in the relevant window (1980-81) are all the country singer (Alan Jackson Tickets Going Fast, Diddle Arena concerts, 1992) and the comedian/singer coverage around his concert dates, not the ASG Minority Affairs committee chairman. No digitalcommons.wku.edu hit ties this name to ASG in 1980-81; the 1981 Talisman index was not checked for him (common-name collision risk too high to pursue further without a page reference)."
+ },
+ {
+  "name": "Dawn Dillard",
+  "years": [
+   "1992-93"
+  ],
+  "note": "Zero hits in the local Herald full index (data/herald-index-full.json) for this exact name. No Talisman volume for 1992-93 is held by archive.org (coverage stops at 1987), so the yearbook route is closed for this year."
+ },
+ {
+  "name": "Debbie Thomas",
+  "years": [
+   "1980-81"
+  ],
+  "note": "Zero hits in the local Herald full index. The 1981 Talisman index (archive.org) lists two candidates: \"Thomas, Deborah Lynn 356\" and a second \"Thomas, Debra Ann\" with no page number, so the name alone does not pick one. Opened printed page 356 (leaf n359 of talisman1981west, via scripts/talisman.py) on 9 November: it is the Juniors class-directory grid, and the block of names beside the matching photo row reads \"DEBORAH L. THOMAS, Glasgow / GREGORY S. THOMAS, Columbia / JAMES A. THOMASON, Morgantown / ...\", nine names against nine thumbnails, with Deborah L. Thomas first and leftmost. The years.json note on the Complaint and Suggestion committee chair gives only \"Debbie Thomas, named 2 September 1980\" - no hometown, class or middle name - so there is nothing to confirm this Glasgow junior is the same Debbie Thomas against the unlocated Debra Ann Thomas, and surname-plus-first-name alone is exactly the match CLAUDE.md rules out. Left unconfirmed, not added to photos.json. A future pass with a hometown, major or middle initial from the SGA minutes could settle it. UPDATE, 10 November 2026: that source is no longer out of reach - digitalcommons.wku.edu/cgi/viewcontent.cgi opened this session via python's urllib (curl still 403s; see .research/photo-run-2026-11-10-scheduled.md). Fetched the actual SGA minutes of 2 September 1980 (sga/Meetings/Minutes/260, viewcontent article=1639, 335 KB, 2 pages, real text layer). They name the committee chairmanship - \"Complaint and Suggestion - Debbie Thomas\" in Fuller's list of standing committees and chairs - but carry no middle name, hometown, major or any other biographical detail, on either page. The disambiguating fact this entry has been waiting for is not in this document. Left unconfirmed, as before; do not refetch 1639 expecting more - it has now been read in full and has nothing further to give."
+ },
+ {
+  "name": "Kristin Hartley",
+  "years": [
+   "2002-03"
+  ],
+  "note": "Zero hits in the local Herald full index for this exact name in the 2002-03 window."
+ },
+ {
+  "name": "Lucas Humble",
+  "years": [
+   "2006-07"
+  ],
+  "note": "Zero hits in the local Herald full index. wkuherald.com WP-JSON search (this session, reachable) returned no SGA-context article naming him."
+ },
+ {
+  "name": "Tim Hill",
+  "years": [
+   "2006-07"
+  ],
+  "note": "Zero hits in the local Herald full index for this exact name in the 2006-07 window; too common a name to search wkuherald.com reliably without a year filter."
+ },
+ {
+  "name": "Jonathan Sprowles",
+  "years": [
+   "2006-07"
+  ],
+  "note": "Zero hits in the local Herald full index. wkuherald.com WP-JSON search (this session) returned zero results for this exact name."
+ },
+ {
+  "name": "Emilee England",
+  "years": [
+   "2007-08"
+  ],
+  "note": "Zero hits in the local Herald full index. wkuherald.com WP-JSON search (this session) returned zero results for this exact name."
+ },
+ {
+  "name": "Meggan Selzer",
+  "years": [
+   "2007-08"
+  ],
+  "note": "Zero hits in the local Herald full index. wkuherald.com WP-JSON search (this session) returned zero results for this exact name."
+ },
+ {
+  "name": "VaShae Swope",
+  "years": [
+   "2008-09"
+  ],
+  "note": "One local Herald index hit, unrelated (WKU/Greeks dispute over new-member names, Feb 2011, no connection to her 2008-09 Diversity Issues chairmanship). wkuherald.com WP-JSON search (this session) found nothing closer."
+ },
+ {
+  "name": "Mac Mullins",
+  "years": [
+   "2012-13"
+  ],
+  "note": "wkuherald.com WP-JSON search (this session) found him quoted as Public Relations Chair commenting on SGA press coverage (26 Feb 2013 SGA meeting story), but the article carries no photograph of him; the post's featured image is unrelated."
+ },
+ {
+  "name": "Mallory Chaney",
+  "years": [
+   "2012-13"
+  ],
+  "note": "wkuherald.com WP-JSON search (this session) returned several 2013 SGA articles but none naming or picturing her specifically; she does not appear as a quoted source in the ones checked."
+ },
+ {
+  "name": "Divya Gangavelli",
+  "years": [
+   "2017-18"
+  ],
+  "note": "wkuherald.com article \"Next student body president elected to office\" (19 Apr 2017) names her only in a list of elected senators-at-large; the article's photograph is a group hug of the executive winners and does not include her. No other SGA-context article names her."
+ },
+ {
+  "name": "Trevor Huffman",
+  "years": [
+   "2018-19"
+  ],
+  "note": "wkuherald.com articles (14 Sep 2018 confirmation hearing, 18 Apr 2018 election results) name him among senators-at-large and committee chairs but carry no photograph of him specifically."
+ },
+ {
+  "name": "Fatin Yaro",
+  "years": [
+   "2020-21"
+  ],
+  "note": "wkuherald.com article (24 Feb 2021) names her as the senator who authored a book-scholarship bill but carries no photograph of her; the post's featured image is a generic SGA logo/graphic."
+ },
+ {
+  "name": "Annie Finch",
+  "years": [
+   "2024-25"
+  ],
+  "note": "Confirmed by name as the organiser of SGA's Veteran's Day 5K (wkuherald.com, 8 Nov 2024: \"organized by SGA Senior Senator and Community Relations head, Annie Finch\") and named in the 27 Aug 2024 meeting story as the new Community Relations Committee chair. Checked the matching photo gallery post (\"Photos: SGA hosts second annual Veteran's Day 5K\", 9 images) caption by caption; none names her. No other photograph on wkuherald.com identifies her."
  }
 ]
