@@ -1112,5 +1112,15 @@
    "label": "data/photos.json, data/years.json organization cross-reference (executive, senate.officers, senate.committees[].chair); wkuherald.com WP-JSON; archive.org Talisman volumes 1975/1979/1981/1987; digitalcommons.wku.edu reachability tests",
    "url": "https://wkuherald.com/wp-json/wp/v2/posts?search=SGA"
   }
+ },
+ {
+  "kind": "source exhausted",
+  "name": "Talisman yearbook, 1995-96 through 2001-02",
+  "year": "",
+  "detail": "TopSCHOLAR's own yearbook collection page (digitalcommons.wku.edu/dlsc_ua_yearbooks/) states outright, in its own prose: 'WKU Talisman published annually 1924-1994; 2003+.' Confirmed by reading the live page's full document list for this run rather than the summary line alone: the 1995 and 1996 entries in that collection are Xposure, a different WKU Student Affairs publication (UA12/2/2), not the Talisman, and no Talisman item of any kind appears between the 1994 volume (dlsc_ua_records/418, article 1418) and the 2003 volume. This closes, for good and without needing another per-year 404 test, every prior run's repeated separate finding that archive.org's djvu mirror lacks talisman1995west through talisman2002west: those volumes are not merely unmirrored at archive.org, they were never digitized by TopSCHOLAR either, because no such scan exists to digitize from. For the committee-chair cluster with no portrait in any year who served 1996-97 through 2001-02 (Andy Gailor, Ryan Faught, Kip Carr, Steve Roadcap, Callie Varner, Anne Guillory, Jason Heflin, Jenny Stith, Jason Cole, Jamie Fite, Larry Murphy, Matt Bogard, Amanda Cole, Tim Hatton, Sally Eilerman, Jeff Baynham, Mitchell Bailey, Joe Murrell, Michelle Woods, Shara Hammers, Andrea Lovell, Brooke Smith among others), the yearbook route is not merely blocked this session, it is structurally gone; only Herald page images (via the digitalcommons PDF path) remain as a possible source, and only for whichever of these issues actually carried a photograph rather than a name alone.",
+  "src": {
+   "label": "digitalcommons.wku.edu/dlsc_ua_yearbooks/, full document listing read 16 November 2026",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_yearbooks/"
+  }
  }
 ]
