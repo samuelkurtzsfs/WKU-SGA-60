@@ -1132,5 +1132,15 @@
    "label": "Google site search of digitalcommons.wku.edu, run 21 November 2026",
    "url": "https://digitalcommons.wku.edu/do/search/"
   }
+ },
+ {
+  "kind": "source exhausted",
+  "name": "wkuherald.com WP-JSON, 22-name 2019-2024 senate/committee cohort",
+  "year": "",
+  "detail": "wkuherald.com's WP-JSON feed was live this run, so searched 22 untried names from the standing officer-portrait gap (Jillian Kenney, Alexis Mayne, Brenna Mathews, Turner Reynolds, Nicole Massarone, Zachary Skillman, Tribhuwan Singh, Jesse Banales, Elizabeth DeLozier, Garrett Baum, Danny Vuleta, Neel Patel, Mallory Hardesty, Reed Hensley, Brooke Mitchell, Kayla Distler, Connor Ferguson, Elizabeth Gannon, David Darnell, Livi Ray, Callison Padgett, Carter Smith) against the search endpoint with _embed=1. Every hit's featured-media alt_text came back empty; the rendered page for the strongest lead (DeLozier named directly in the body of wkuherald.com/67853/, 'SGA elects committee chairs...') carries only a generic executive-cabinet group photo whose alt text names nobody, and the same image file is reused as the featured image on several unrelated SGA articles pulled by other names in this batch - a stock meeting photo, not a portrait. 'Baum' matching that page was a false positive, the byline 'Josh Baumgardner.' None of the other 21 names turned up an <img alt> naming that specific person on any matched article; wkuherald.com only captions a named individual when the whole article is about them (a presidency, an election-results gallery), never for a committee chair or senator named mid-paragraph. Close this batch; do not re-run these 22 names against WP-JSON on the strength of this entry alone.",
+  "src": {
+   "label": "wkuherald.com WP-JSON search, run 21 November 2026",
+   "url": "https://wkuherald.com/wp-json/wp/v2/posts"
+  }
  }
 ]
