@@ -1122,5 +1122,15 @@
    "label": "digitalcommons.wku.edu/dlsc_ua_yearbooks/, full document listing read 16 November 2026",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_yearbooks/"
   }
+ },
+ {
+  "kind": "source exhausted",
+  "name": "WKU Archives UA1C image collections, as a route into the n1419 Herald-quoted-but-never-photographed cohort",
+  "year": "",
+  "detail": "TopSCHOLAR's own `do/search/` page cannot be crawled directly - confirmed by request, not assumed: a plain HTTPS GET with full browser navigation headers returns a 200 whose results list is templated client-side from a separate AJAX call, so the HTML body never carries a result row. This is why CLAUDE.md already says to use a Google-style site search instead. Ran `site:digitalcommons.wku.edu UA1C \"student government\"` and found no UA1C item at all keyed to student government; the two nearest matches are text finding aids (a 2004 \"UA1B2/1 Student Government History\" aid in the Student/Alumni Personal Papers collection, and a \"UA12/3/1 Student Government Association - Governance\" inventory page), neither a photograph collection and neither new to this project. Also re-ran direct site searches for four of the most-quoted, never-photographed officers from the richest-documented 2014-2022 cohort (Nathan Cherry, Josh Zaczek, Erika Puhakka, Justin Goins): Cherry surfaces only on wku.edu text pages (SGA minutes, cabinet notes) already known to carry no images; the other three produce no digitalcommons.wku.edu hit of any kind. No new lead from either search. Close UA1C as a route into this cohort; a later run should not re-crawl TopSCHOLAR's own search page expecting server-rendered results.",
+  "src": {
+   "label": "Google site search of digitalcommons.wku.edu, run 21 November 2026",
+   "url": "https://digitalcommons.wku.edu/do/search/"
+  }
  }
 ]
