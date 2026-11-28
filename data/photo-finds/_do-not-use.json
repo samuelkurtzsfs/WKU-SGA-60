@@ -3,7 +3,7 @@
   "name": "Stacy Kitchens",
   "year": "1990-91",
   "file": "1991-92-stacy-kitchens.jpg",
-  "reason": "Withdrawn on 22 September 2026: the identification rested on an uncommon surname and a class year, not on any caption tying her to student government, and the Herald index carries five distinct Kitchenses in this period. The finding was never barred here, so it sat in data/photo-finds/1986-1990.json ready to be re-proposed by the next merge. This run tried to close the gap the withdrawal left open: a companion entry (data/photo-finds/n8892.json) claims the 1991 Talisman, p. 185, captions the Associated Student Government group photograph 'Front: Emily G. Morgan, Maryann D'Aniello, Staci J. Kitchens, K. Ashley Means, Deanna L. Mills', which would settle it. That page could not be checked: 1991 is not among the volumes archive.org holds for this project (1971-1981, 1986, 1987 only), and digitalcommons.wku.edu/cgi/viewcontent.cgi?article=1415&context=dlsc_ua_records (the 1991 Talisman's PDF) returned a Cloudflare bot challenge (HTTP 403, cf-mitigated: challenge) rather than the document, on a plain GET with full navigation headers and a 90-second wait. Do not publish either Kitchens entry until someone reads that page directly."
+  "reason": "Withdrawn on 22 September 2026: the identification rested on an uncommon surname and a class year, not on any caption tying her to student government, and the Herald index carries five distinct Kitchenses in this period. The finding was never barred here, so it sat in data/photo-finds/1986-1990.json ready to be re-proposed by the next merge. This run tried to close the gap the withdrawal left open: a companion entry (data/photo-finds/n8892.json) claims the 1991 Talisman, p. 185, captions the Associated Student Government group photograph 'Front: Emily G. Morgan, Maryann D'Aniello, Staci J. Kitchens, K. Ashley Means, Deanna L. Mills', which would settle it. That page could not be checked: 1991 is not among the volumes archive.org holds for this project (1971-1981, 1986, 1987 only), and digitalcommons.wku.edu/cgi/viewcontent.cgi?article=1415&context=dlsc_ua_records (the 1991 Talisman's PDF) returned a Cloudflare bot challenge (HTTP 403, cf-mitigated: challenge) rather than the document, on a plain GET with full navigation headers and a 90-second wait. Do not publish either Kitchens entry until someone reads that page directly. RESOLVED, 19 November 2026: the page was read directly (web.archive.org/web/*id_/ bypass of the same viewcontent.cgi URL, which answered 200 with a real PDF this pass). The caption and row-sex check confirmed in full: back row (Allison N. Ade, Mary Susan Bunce, Gregory L. Willoughby, Donald Smith, Mark Miller) runs woman, woman, man, man, man in the photograph, which fixes the front row left to right too, and Kitchens is third of the five women in front. Published to data/photos.json as 1990-91-stacy-kitchens.jpg (a new crop; this entry's old file, 1991-92-stacy-kitchens.jpg, remains barred and unused). Do not reopen."
  },
  {
   "name": "Staci Kitchens",
@@ -226,7 +226,8 @@
   "file": "Herald 2 Dec 2014, the self-defence class",
   "reason": "Two men named, no positions, and both are mid-hold on the mat with their faces turned into each other's shoulders. No usable face even if the caption placed them.",
   "url": "https://wkuherald.com/wp-content/uploads/2014/12/e51a6a6363415cb8069ea0f6f8ee6d64.jpg",
-  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json",
+  "resolved": "Found from a different source, 10 November 2026 scheduled pass. The self-defence frame condemned above is still unusable for the reason given. Published instead from the 2015 Talisman (Resurgence, article 9665 on digitalcommons.wku.edu/dlsc_ua_records/8679), p. 318, the Campus Activities Board club photograph: 'Row 2: Lakosa Shelton, Jasmine Hockaday, William Berry, Lyndsey Pener.' Ten people in three rows, and he is the only man in the photograph, which fixes him without needing the row order to be read correctly. The volume's own back index lists exactly one William Berry in the whole book, at pp. 297 and 318, so there is no second candidate to confuse him with. Published as 2014-15-william-berry.jpg."
  },
  {
   "name": "Elias Thompson",
@@ -588,7 +589,7 @@
   "name": "Alice Wicks",
   "year": "1978-79",
   "file": "1979 Talisman (archive.org talisman1979west)",
-  "reason": "The back-of-book index carries exactly one 'Wicks, Alice Elizabeth' entry and it is followed by no page number, so it points at no photograph. A missing page number is common in this index rather than unusual — 'Wicks, Joel David' directly below it has none either — so it shows only that there is nothing to turn to, not that she went unphotographed. No other mention of her anywhere in the OCR text."
+  "reason": "The back-of-book index carries exactly one 'Wicks, Alice Elizabeth' entry and it is followed by no page number, so it points at no photograph. A missing page number is common in this index rather than unusual \u2014 'Wicks, Joel David' directly below it has none either \u2014 so it shows only that there is nothing to turn to, not that she went unphotographed. No other mention of her anywhere in the OCR text."
  },
  {
   "name": "Steve Wilson",
@@ -600,7 +601,7 @@
   "name": "Mark Chesnut",
   "year": "1980-81",
   "file": "1981 Talisman (archive.org talisman1981west), back index 'Chesnut, Mark Cameron 234'",
-  "reason": "The index page number resolves to the men's intramural champions list, where the name is printed 'Mark Chestnut (Sigma Alpha Epsilon)' as all-sports champion — a spelling variant, and a text listing rather than a photograph. Page 234 is fixed by three other names in the same block indexing to it: Mike Bell, Gary Crenshaw and Karen Francis. The only other Chesnut in the volume is a senior portrait, 'WILLIAM G. CHESNUT, Berea', a different person. Nothing in the volume ties either spelling to ASG or shows the treasurer's face. Search 'Chestnut' as well as 'Chesnut' before reopening this."
+  "reason": "The index page number resolves to the men's intramural champions list, where the name is printed 'Mark Chestnut (Sigma Alpha Epsilon)' as all-sports champion \u2014 a spelling variant, and a text listing rather than a photograph. Page 234 is fixed by three other names in the same block indexing to it: Mike Bell, Gary Crenshaw and Karen Francis. The only other Chesnut in the volume is a senior portrait, 'WILLIAM G. CHESNUT, Berea', a different person. Nothing in the volume ties either spelling to ASG or shows the treasurer's face. Search 'Chestnut' as well as 'Chesnut' before reopening this."
  },
  {
   "name": "Chris Millay",
@@ -674,23 +675,23 @@
   "file": "https://wkuherald.com/wp-content/uploads/2024/03/dalle-big-red.jpg",
   "url": "https://wkuherald.com/wp-content/uploads/2024/03/dalle-big-red.jpg",
   "logged": "2026-10-07",
-  "reason": "Barred by the editor on 7 October 2026, before it was ever proposed: this is not a photograph. The Herald published it as a synthetic illustration, and its own caption says so. It sits in data/herald-photos.json among 21,304 harvested Herald images with nothing to mark it off from the real ones, so a sweep hunting Big Red or a mascot could land it as a picture of the thing it depicts. A misidentified face is worse than no face; an invented one is worse still, because no part of it is evidence of anything. Keyed to the url so the bar bites rather than staying advisory. Herald caption: “This image was created by prompting DALL-E, an AI image generator to generate an image of a mascot inspired by Big Red.”"
+  "reason": "Barred by the editor on 7 October 2026, before it was ever proposed: this is not a photograph. The Herald published it as a synthetic illustration, and its own caption says so. It sits in data/herald-photos.json among 21,304 harvested Herald images with nothing to mark it off from the real ones, so a sweep hunting Big Red or a mascot could land it as a picture of the thing it depicts. A misidentified face is worse than no face; an invented one is worse still, because no part of it is evidence of anything. Keyed to the url so the bar bites rather than staying advisory. Herald caption: \u201cThis image was created by prompting DALL-E, an AI image generator to generate an image of a mascot inspired by Big Red.\u201d"
  },
  {
-  "name": "Statue “AI Interpretation” (synthetic image, not a photograph)",
+  "name": "Statue \u201cAI Interpretation\u201d (synthetic image, not a photograph)",
   "year": "2023-24",
   "file": "https://wkuherald.com/wp-content/uploads/2024/04/dalle-statue.jpg",
   "url": "https://wkuherald.com/wp-content/uploads/2024/04/dalle-statue.jpg",
   "logged": "2026-10-07",
-  "reason": "Barred by the editor on 7 October 2026, before it was ever proposed: this is not a photograph. The Herald published it as a synthetic illustration, and its own caption says so. It sits in data/herald-photos.json among 21,304 harvested Herald images with nothing to mark it off from the real ones, so a sweep hunting the Guthrie Bell tower or a campus statue could land it as a picture of the thing it depicts. A misidentified face is worse than no face; an invented one is worse still, because no part of it is evidence of anything. Keyed to the url so the bar bites rather than staying advisory. Herald caption: “AI Interpretation” The caption alone would not give it away, but the file is named dalle-statue.jpg and it ran on 4 April 2024 beside the Cherry Hall image barred below, from the same set."
+  "reason": "Barred by the editor on 7 October 2026, before it was ever proposed: this is not a photograph. The Herald published it as a synthetic illustration, and its own caption says so. It sits in data/herald-photos.json among 21,304 harvested Herald images with nothing to mark it off from the real ones, so a sweep hunting the Guthrie Bell tower or a campus statue could land it as a picture of the thing it depicts. A misidentified face is worse than no face; an invented one is worse still, because no part of it is evidence of anything. Keyed to the url so the bar bites rather than staying advisory. Herald caption: \u201cAI Interpretation\u201d The caption alone would not give it away, but the file is named dalle-statue.jpg and it ran on 4 April 2024 beside the Cherry Hall image barred below, from the same set."
  },
  {
   "name": "Cherry Hall with tour guides (synthetic image, not a photograph)",
   "year": "2023-24",
-  "file": "https://wkuherald.com/wp-content/uploads/2024/04/Screenshot-2024-04-04-at-3.39.20 PM.png",
-  "url": "https://wkuherald.com/wp-content/uploads/2024/04/Screenshot-2024-04-04-at-3.39.20 PM.png",
+  "file": "https://wkuherald.com/wp-content/uploads/2024/04/Screenshot-2024-04-04-at-3.39.20\u202fPM.png",
+  "url": "https://wkuherald.com/wp-content/uploads/2024/04/Screenshot-2024-04-04-at-3.39.20\u202fPM.png",
   "logged": "2026-10-07",
-  "reason": "Barred by the editor on 7 October 2026, before it was ever proposed: this is not a photograph. The Herald published it as a synthetic illustration, and its own caption says so. It sits in data/herald-photos.json among 21,304 harvested Herald images with nothing to mark it off from the real ones, so a sweep hunting Cherry Hall, campus tours or the statue could land it as a picture of the thing it depicts. A misidentified face is worse than no face; an invented one is worse still, because no part of it is evidence of anything. Keyed to the url so the bar bites rather than staying advisory. Herald caption: “This image was generated with Dall-E using a description of Cherry Hall and tour guides standing around the statue.”"
+  "reason": "Barred by the editor on 7 October 2026, before it was ever proposed: this is not a photograph. The Herald published it as a synthetic illustration, and its own caption says so. It sits in data/herald-photos.json among 21,304 harvested Herald images with nothing to mark it off from the real ones, so a sweep hunting Cherry Hall, campus tours or the statue could land it as a picture of the thing it depicts. A misidentified face is worse than no face; an invented one is worse still, because no part of it is evidence of anything. Keyed to the url so the bar bites rather than staying advisory. Herald caption: \u201cThis image was generated with Dall-E using a description of Cherry Hall and tour guides standing around the statue.\u201d"
  },
  {
   "name": "John Evans",

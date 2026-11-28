@@ -7710,6 +7710,25 @@ items — so recount it rather than quoting it.) No file in `data/photos.json` o
 run's only output is this note and `.research/photo-run-2026-10-08-afternoon.md`.
 `build.py` and `check_data.py` both pass clean. Landed on `research-photos`.
 
+### A note on this trigger's firing rate, 15 November
+
+Not a research finding — an operational one, for whoever owns this project's scheduled Routines,
+since no agent session can act on it. The photo trigger fired roughly three to four times a day
+through the first half of November (41 `.research/photo-run-2026-11-*.md` files logged between
+4 and 15 November). Of those 41 runs, two actually added a photograph (`data/photos.json`
+10 November, William Berry; 12 November, Connie Hoffmann). Every run since 12 November — about
+fifteen of them, including both passes on 15 November — has reconfirmed the same two facts: the
+TopSCHOLAR PDF endpoint (`cgi/viewcontent.cgi`) is Cloudflare-gated and `web.archive.org` resets
+mid-handshake, and every name still open in `data/photo-finds/` that `archive.org`'s own reachable
+Talisman holding (1971-1981, 1986, 1987) could possibly cover has already been checked, several of
+them three or more times by independent methods (`_do-not-use.json`, `_archive-gaps.json`). Neither
+gate is something a run from inside this container can open — §8.1 and the network-state sections
+of the November reports cover why. Until one of those two gates reopens, or someone supplies a
+browser-backed route (`scripts/browser_bridge.py` is referenced in earlier reports but not
+exercised here), a run at this cadence mostly reproduces the same negative result. Worth firing
+this trigger less often, or pointing a run at one of this file's other open items (§8) instead of
+photographs, until the network state actually changes.
+
 ## 9. Restarting a session
 
 ```bash

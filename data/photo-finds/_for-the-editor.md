@@ -1,36 +1,36 @@
 # Faces proved, people not — for the editor
 
-18 entries covering 17 people are cut, on disk and refused by the merge. Each one is a face a
-researcher established beyond doubt, attached to a person they could not prove is the same
-person the archive records. The rule here is that identification is absolute, so none of them
-is published and none is thrown away.
+**Checked against the live data on 22 November 2026, since this file had gone stale.** Five of
+the people originally logged here are no longer open questions: **George/Georgiana Carlson** is
+published (`1976-77-georgiana-carlson.jpg` is in `data/photos.json`); **David Young**, **Crystal
+Smith**, **Sawyer Coffey** and **Cody Cox** were each independently decided and moved to
+`data/photo-finds/_do-not-use.json` with a real reason (not the placeholder text some other
+entries there carry — see below). None of those five needs anything further from an editor, and
+their write-ups are removed from this file so a future run does not re-raise them as pending.
+
+**Still genuinely open, confirmed 22 November 2026: 13 people, 14 entries below** (counting the
+still-open half of the Sawyer Coffey question separately from the closed one, and the two Lori
+Doolin frames as one person). Every one of
+them has sat here since the original write-up (8 September 2026 or shortly after) with no
+decision recorded anywhere, and `_do-not-use.json` carries placeholder "Withheld... FOR THE
+EDITOR" stubs for several of them (Grace Hancock, Curtis Street, Lori Doolin, John Chestnut, Amy
+Renigar) that add nothing beyond what is written out in full below — those stubs are not a second,
+independent review. No further automated research can resolve any of these: the face and the
+frame are established; what's missing is a source that ties that specific face to the specific
+officeholder, and nobody has found one in two and a half months of runs. This is a judgement call
+for a person, not a research gap.
 
 Each needs one decision. Where the answer is yes, remove the `identification` line from the
 entry in its findings file and the next merge will publish it. Where it is no, move the entry
-to `_do-not-use.json` with the reason.
+to `_do-not-use.json` with the reason (a real one, not a placeholder).
 
 Two of the original nineteen came off this list on 8 September and are recorded at the foot of
 this file. Both were answered by evidence, not by a decision made at a desk.
-
-## George Carlson — 1976-77
-`1976-77-georgiana-carlson.jpg`
-
-A clean sophomore class studio portrait, 220 by 280, cut from a 3102-pixel archive.org page scan. Soft only from the halftone screen, not from downscaling.
-
-## David Young — 1978-79
-`1978-79-david-young.jpg`
-
-Head and shoulders lifted out of a marching-band crowd photograph in the stands, 280 by 400 from a 3101-pixel archive.org scan. Not a studio portrait and never will be: he has no class portrait entry in the printed grids of the 1976, 1977, 1978 or 1979 volumes.
 
 ## Debbie Thomas — 1980-81
 `1980-81-debbie-thomas.jpg`
 
 The cell is proved to be Deborah L. Thomas of Glasgow beyond doubt. What is not proved is that Deborah L. Thomas is the Debbie Thomas who chaired the Complaint and Suggestion committee. TWO women with that name were enrolled at Western in her officer year and both sat for portraits: the 1980 Talisman name index, printed p. 430, reads 'Thomas, Deborah Anne 369' and 'Thomas, Deborah Lynn 392', two consecutive lines, each with a page number, and the 1981 index carries 'Thomas, Deborah Lynn 356' pictured and 'Thomas, Debra Ann' enrolled but not pictured. Nothing in either volume separates them by anything the officer record also records. The usual tie-breaker fails as well: the 1981 volume's Associated Student Government group photograph, printed p. 282, names all twenty-eight people in it and no Thomas is among them, so neither woman is tied to a student government page. Deborah Lynn is the better of the two candidates and the reason this crop is of her rather than the other: she is the only Deborah Thomas pictured in the volume that covers the officer year, she is a junior in 1980-81, 
-
-## Crystal Smith — 1992-93
-`1992-93-crystal-smith.jpg`
-
-THE CELL IS CERTAIN. 1994 Talisman, printed p. 59, the Alpha Omicron Pi portrait grid. Five portraits across, six rows deep, thirty cells, and thirty names set in one column down the right margin in blocks of five against each grid row, alphabetical left to right. The sixth and last block reads Shelly Perry Sr. Joelton, Tenn. / Gretchen Ploch Sr. Louisville / Crystal Smith Sr. Newburgh, Ind. / Leigh Sowards Sr. Bowling Green / Shelly J. Stinson Fr. Hendersonville, Tenn. - P, P, S, S, S in order. This is the third cell of the bottom row. The row above reads Kamuf, Law, Marks, Maxwell, Nally, also alphabetical and also five, and every face on the page is a woman as a sorority page must be. Cell edges taken from the printed gutters, columns at x 814-1192 and rows at y 2901-3420 of a 2640-pixel render. The back index confirms the pointer with "Smith, Crystal, 59". A clean studio headshot, in focus, facing the camera.
 
 ## Nicki Jerome — 1992-93
 `1992-93-nicki-jerome.jpg`
@@ -108,38 +108,16 @@ the absence is the book's own convention saying membership list rather than key.
 counter-signal: the two unambiguously male names fall at exactly the two positions where the
 photograph shows men, reading left to right, which would put her seventh from the left. But the
 subjects are staggered in depth, and 2014-19 is the block that produced every wrong-person trap in
-this project. One more source of her face settles it either way.
+this project. One more source of her face settles it either way. (A separate, unrelated Sawyer
+Coffey lead — a wkuherald.com search that turned up no captioned photo at all — was closed as a
+dead end in `_do-not-use.json`; this PRSSA group-photo question is still open on its own terms.)
 
----
-
-## Cody Cox, Associate Justice 2015-16, Chief Justice 2016-17
-
-**Held for you to decide, 8 September 2026. Not a doubt about the face.**
-
-Crop: `~/Desktop/SGA60 photo hunt/_withheld/2015-16-cody-cox-HELD.jpeg`, 796x1219,
-a studio portrait, one subject, sharp.
-
-**Source.** College Heights Herald, 6 February 2014, page A1. The caption sits
-directly beneath its own frame: "Winchester freshman Cody Cox came out of the
-closet when he was a junior in high school... IAN MAULE/HERALD." That is the
-strongest form of proof this project uses — one name, one frame, caption
-underneath.
-
-**Identification.** He is named Chief Justice in four separate 2016-17 Herald
-reports. The Herald 1993-2019 contains exactly one Cody Cox: this one. A
-freshman in spring 2014 is a junior in 2016-17, which is exactly when he holds
-the office. No second Cody Cox exists anywhere in the corpus to confuse him
-with.
-
-**Why it is held, and it is not an identification problem.** The photograph
-illustrates a front-page feature about him coming out. The face is his and the
-citation would read neutrally — issue, date, page, as every other citation on
-the site does — but a reader who follows the citation lands on that story. He is
-a living private person who did not put that photograph on an SGA page himself.
-That is your call to make and not mine to make quietly.
-
-Say the word and it goes up in one command; say no and I will record it as
-found-and-declined so nobody hunts him again.
+**Cody Cox, Associate Justice 2015-16, Chief Justice 2016-17 — DECIDED, not open.** The face was
+real (Herald, 6 Feb 2014, p. A1, captioned front-page feature on him coming out) and the
+identification was solid, but it was withdrawn and is recorded in `_do-not-use.json`: it illustrates
+a story about his personal life that has nothing to do with his service in student government, and
+using it as his SGA portrait would repurpose a photograph a living private person gave for one
+reason to a different one. Do not re-raise this; someone already made the call.
 
 # Closed on 8 September 2026
 
